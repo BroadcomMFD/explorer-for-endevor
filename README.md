@@ -2,7 +2,7 @@
 
 <div id="header" align="center">
 
-[![Version](https://img.shields.io/badge/version-1.9.0-brightgreen)](https://marketplace.visualstudio.com/items/broadcomMFD.explorer-for-endevor/changelog)
+[![Version](https://img.shields.io/badge/version-1.9.1-brightgreen)](https://marketplace.visualstudio.com/items/broadcomMFD.explorer-for-endevor/changelog)
 [![Downloads](https://img.shields.io/visual-studio-marketplace/d/broadcomMFD.explorer-for-endevor)](https://marketplace.visualstudio.com/items/broadcomMFD.explorer-for-endevor)
 [![GitHub issues](https://img.shields.io/github/issues/BroadcomMFD/bridge-for-git-explorer)](https://github.com/BroadcomMFD/explorer-for-endevor/issues)
 [![Support](https://img.shields.io/badge/Broadcom-support-red)](https://www.broadcom.com/support)
