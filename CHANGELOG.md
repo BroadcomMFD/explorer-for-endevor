@@ -2,6 +2,18 @@
 
 You can find all notable changes to Explorer for Endevor in this document.
 
+## [1.9.2] &ndash; 2024-12-18
+
+### Added
+
+- Added a new **LSP Config Log** output channel that includes the detailed information useful for troubleshooting Endevor configuration retrieval errors.
+
+### Fixed
+
+- Fixed an issue that led to the internal critical parsing errors for the specific processor configurations. This issue caused problems fetching the dependencies for COBOL Language Support VS Code extension integration.
+- Fixed an issue that prevented the extension from sending the telemetry events when the telemetry collection is enabled.
+- Removed the misleading directory cleanup errors in the extension output channel.
+
 ## [1.9.1] &ndash; 2024-11-06
 
 ### Fixed

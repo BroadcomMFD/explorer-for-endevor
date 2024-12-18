@@ -2,9 +2,10 @@
 
 <div id="header" align="center">
 
-[![Version](https://img.shields.io/badge/version-1.9.1-brightgreen)](https://marketplace.visualstudio.com/items/broadcomMFD.explorer-for-endevor/changelog)
+[![Version](https://img.shields.io/badge/version-1.9.2-brightgreen)](https://marketplace.visualstudio.com/items/broadcomMFD.explorer-for-endevor/changelog)
 [![Downloads](https://img.shields.io/visual-studio-marketplace/d/broadcomMFD.explorer-for-endevor)](https://marketplace.visualstudio.com/items/broadcomMFD.explorer-for-endevor)
-[![GitHub issues](https://img.shields.io/github/issues/BroadcomMFD/bridge-for-git-explorer)](https://github.com/BroadcomMFD/explorer-for-endevor/issues)
+[![GitHub issues](https://img.shields.io/github/issues/BroadcomMFD/explorer-for-endevor)](https://github.com/BroadcomMFD/explorer-for-endevor/issues)
+[![Slack](https://img.shields.io/badge/chat-on%20Slack-blue)](https://che4z.slack.com/archives/CQNJDQFFX)
 [![Support](https://img.shields.io/badge/Broadcom-support-red)](https://www.broadcom.com/support)
 
 </div>
@@ -261,7 +262,7 @@ You apply one filter or multiple filters to the Endevor elements that were fetch
 
 4. (Optional) Edit or remove your filters by clicking the **Edit filter** or **Clear filter value** options respectively. The options appear when you hover over the filter names.
 
-![Filter Elements](images/E4E-filter-elements.gif?raw=true "Filter Elements")
+![Filter Elements](images/E4E-filter-elements.gif?raw=true 'Filter Elements')
 <br /><br />
 
 You successfully set a filter for your inventory location.
@@ -286,7 +287,7 @@ The **Element Search Mode** option enables you to either display only the first 
 
 3. (Optional) To return to the elements in place view, click the **Select Element Search Mode** icon again and select the **Elements in Place Only** option.
 
-![Select Element Search Mode](images/E4E-element-search-mode.gif?raw=true "Select Element Search Mode")
+![Select Element Search Mode](images/E4E-element-search-mode.gif?raw=true 'Select Element Search Mode')
 <br /><br />
 
 You successfully displayed the elements from up the map.
@@ -307,7 +308,7 @@ You can upload a new element to your inventory location. Also, you can assign a 
 
 4. (Optional) Select an available processor group from the drop-down list.
 
-![Add an Element](images/E4E-add.gif?raw=true "Add an Element")
+![Add an Element](images/E4E-add.gif?raw=true 'Add an Element')
 <br /><br />
 
 You successfully added the element.
@@ -321,7 +322,7 @@ You can view the contents, summary, and source level information of an element b
 
    The contents of the element appear in the editor area.
 
-![View an Element](images/E4E-view.gif?raw=true "View an Element")
+![View an Element](images/E4E-view.gif?raw=true 'View an Element')
 <br /><br />
 
 ### Delete an Element
@@ -370,7 +371,7 @@ The inventory location details of an element you want to view appear in the edit
 
    The details of the element appear in the editor area.
 
-![View Details](images/E4E-view-details.gif?raw=true "View Details")
+![View Details](images/E4E-view-details.gif?raw=true 'View Details')
 <br /><br />
 
 ### Show History
@@ -392,7 +393,7 @@ The **Show History** feature enables you to review changes of the element. You c
 
 You successfully viewed the element history.
 
-![View History](images/E4E-view-history.gif?raw=true "View History=")
+![View History](images/E4E-view-history.gif?raw=true 'View History=')
 <br /><br />
 
 ### Review the Generate Report
@@ -407,7 +408,7 @@ You can retrieve the C1MSGS1 Endevor batch execution report that contains the de
 
    The C1MSGS1 Endevor batch execution report appears in the editor area.
 
-![View History](images/E4E-report-after-actions.gif?raw=true "View History=")
+![View History](images/E4E-report-after-actions.gif?raw=true 'View History=')
 <br /><br />
 
 ### Generate All Elements for a Subsystem
@@ -421,7 +422,7 @@ You can retrieve the C1MSGS1 Endevor batch execution report that contains the de
 
    The summary table for a C1MSGS1 Endevor batch execution report is produced in the event of error(s) while generating element(s). You can review the table in the editor area.
 
-![Report Table](images/E4E-report-table-generate.gif?raw=true "Report Table")
+![Report Table](images/E4E-report-table-generate.gif?raw=true 'Report Table')
 <br /><br />
 
 ### Create a Package
@@ -441,7 +442,7 @@ You successfully created the package.
 
 You can find the package in the **Endevor Packages** view.
 
-![Create a Package](images/E4E-create-package.gif?raw=true "Create a package")
+![Create a Package](images/E4E-create-package.gif?raw=true 'Create a package')
 
 <br /><br />
 
@@ -518,7 +519,7 @@ You can review SCL of your existing packages, using the **Show SCL** option.
 
 You successfully displayed the package SCL.
 
-![Show Package SCL](images/E4E-show-scl.gif?raw=true "Show Package SCL")
+![Show Package SCL](images/E4E-show-scl.gif?raw=true 'Show Package SCL')
 
 ### Create a Package Name using the GENPKGID option
 
@@ -554,7 +555,7 @@ The **Edit** action lets you download an element, edit, and upload the element b
 
 You successfully edited and saved the element.
 
-![Edit](images/E4E-edit.gif?raw=true "Edit")
+![Edit](images/E4E-edit.gif?raw=true 'Edit')
 <br /><br />
 
 ### Out-of-Sync
@@ -579,7 +580,7 @@ The out-of-sync feature enables you to resolve out-of-sync elements. Out-of-sync
 
 You successfully resolved the out-of-sync situation for the element.
 
-![Resolve Out-of-Sync](images/E4E-out-of-sync.gif?raw=true "Resolve Out-of-Sync")
+![Resolve Out-of-Sync](images/E4E-out-of-sync.gif?raw=true 'Resolve Out-of-Sync')
 <br /><br />
 
 ### Generate
@@ -598,12 +599,12 @@ You can use the **Generate in Place**, **Generate with Copyback**, or **Generate
 
    - Right-click an element and select the **Generate in Place** option.
 
-     ![Generate in Place](images/E4E-Generate-in-Place.gif?raw=true "Generate in Place")
+     ![Generate in Place](images/E4E-Generate-in-Place.gif?raw=true 'Generate in Place')
      <br /><br />
 
    - Right-click an element from up the map and select the **Generate with Copy back** option.
 
-     ![Generate with Copy back](images/E4E-Generate-Copyback.gif?raw=true "Generate with Copy back")
+     ![Generate with Copy back](images/E4E-Generate-Copyback.gif?raw=true 'Generate with Copy back')
      <br /><br />
 
    - Right-click an element from up the map and select the **Generate with No Source** option.
@@ -639,7 +640,7 @@ The **Print a listing** option enables you to display the listings of a selected
 
 You successfully printed the listing.
 
-![Print Listing](images/E4E-listing.gif?raw=true "Print Listing")
+![Print Listing](images/E4E-listing.gif?raw=true 'Print Listing')
 <br /><br />
 
 ### Sign Out
@@ -653,7 +654,7 @@ The **Sign out** option enables you to lock an element, which prevents other use
 
 You successfully signed out the element.
 
-![Sign Out](images/E4E-signout.gif?raw=true "Sign Out")
+![Sign Out](images/E4E-signout.gif?raw=true 'Sign Out')
 <br /><br />
 
 ### Sign In
@@ -687,7 +688,7 @@ You can download an element or multiple selected elements to your workspace and 
 
 You successfully retrieved the element(s).
 
-![Retrieve Element(s)](images/E4E-retrieve.gif?raw=true "Retrieve Element(s)")
+![Retrieve Element(s)](images/E4E-retrieve.gif?raw=true 'Retrieve Element(s)')
 <br /><br />
 
 You can download an element or multiple elements with dependencies and work with them locally.
@@ -699,7 +700,7 @@ You can download an element or multiple elements with dependencies and work with
 
 You successfully retrieved the element(s) with dependencies.
 
-![Retrieve Element(s) with Dependencies](images/E4E-retrieve-dep.gif?raw=true "Retrieve Element(s) with Dependencies")
+![Retrieve Element(s) with Dependencies](images/E4E-retrieve-dep.gif?raw=true 'Retrieve Element(s) with Dependencies')
 <br /><br />
 
 ## Base Profiles

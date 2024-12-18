@@ -2,11 +2,6 @@
 
 This project leverages the following third party content.
 
-@broadcom/endevor-bridge-for-git-rest-api (0.2.21)
-
-- License: SEE LICENSE IN LICENSE
-- Project: https://www.npmjs.com/package/@broadcom/endevor-bridge-for-git-rest-api
-
 @broadcom/endevor-for-zowe-cli (7.7.6)
 
 - License: Broadcom Internal
@@ -22,27 +17,27 @@ This project leverages the following third party content.
 - License: MIT
 - Project: https://www.npmjs.com/package/@fastify/busboy
 
-@microsoft/1ds-core-js (4.3.2)
+@microsoft/1ds-core-js (4.3.4)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/@microsoft/1ds-core-js
 
-@microsoft/1ds-post-js (4.3.2)
+@microsoft/1ds-post-js (4.3.4)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/@microsoft/1ds-post-js
 
-@microsoft/applicationinsights-channel-js (3.3.2)
+@microsoft/applicationinsights-channel-js (3.3.4)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/@microsoft/applicationinsights-channel-js
 
-@microsoft/applicationinsights-common (3.3.2)
+@microsoft/applicationinsights-common (3.3.4)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/@microsoft/applicationinsights-common
 
-@microsoft/applicationinsights-core-js (3.3.2)
+@microsoft/applicationinsights-core-js (3.3.4)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/@microsoft/applicationinsights-core-js
@@ -52,7 +47,7 @@ This project leverages the following third party content.
 - License: MIT
 - Project: https://www.npmjs.com/package/@microsoft/applicationinsights-shims
 
-@microsoft/applicationinsights-web-basic (3.3.2)
+@microsoft/applicationinsights-web-basic (3.3.4)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/@microsoft/applicationinsights-web-basic
@@ -87,22 +82,17 @@ This project leverages the following third party content.
 - License: MIT
 - Project: https://www.npmjs.com/package/@nodelib/fs.walk
 
-@vscode/extension-telemetry (0.9.7)
+@vscode/extension-telemetry (0.9.8)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/@vscode/extension-telemetry
 
-@vscode/test-electron (2.4.1)
-
-- License: MIT
-- Project: https://www.npmjs.com/package/@vscode/test-electron
-
-@zowe/imperative (5.27.0)
+@zowe/imperative (5.27.5)
 
 - License: EPL-2.0
 - Project: https://www.npmjs.com/package/@zowe/imperative
 
-agent-base (7.1.1)
+agent-base (7.1.3)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/agent-base
@@ -112,7 +102,7 @@ ajv (8.12.0)
 - License: MIT
 - Project: https://www.npmjs.com/package/ajv
 
-ansi-regex (6.0.1)
+ansi-regex (5.0.1)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/ansi-regex
@@ -137,30 +127,20 @@ asynckit (0.4.0)
 - License: MIT
 - Project: https://www.npmjs.com/package/asynckit
 
-bl (5.1.0)
+at-least-node (1.0.0)
 
-- License: MIT
-- Project: https://www.npmjs.com/package/bl
+- License: ISC
+- Project: https://www.npmjs.com/package/at-least-node
 
 braces (3.0.3)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/braces
 
-chalk (5.3.0)
+chalk (4.1.2)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/chalk
-
-cli-cursor (4.0.0)
-
-- License: MIT
-- Project: https://www.npmjs.com/package/cli-cursor
-
-cli-spinners (2.9.2)
-
-- License: MIT
-- Project: https://www.npmjs.com/package/cli-spinners
 
 cli-table3 (0.6.2)
 
@@ -202,7 +182,7 @@ core-util-is (1.0.3)
 - License: MIT
 - Project: https://www.npmjs.com/package/core-util-is
 
-cross-spawn (7.0.3)
+cross-spawn (7.0.6)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/cross-spawn
@@ -217,7 +197,7 @@ date-format (4.0.14)
 - License: MIT
 - Project: https://www.npmjs.com/package/date-format
 
-debug (4.3.7)
+debug (4.3.6)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/debug
@@ -247,12 +227,7 @@ diff2html (3.4.20-usewontache.1.60e7a2e)
 - License: MIT
 - Project: https://www.npmjs.com/package/diff2html
 
-eastasianwidth (0.2.0)
-
-- License: MIT
-- Project: https://www.npmjs.com/package/eastasianwidth
-
-emoji-regex (10.3.0)
+emoji-regex (8.0.0)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/emoji-regex
@@ -357,16 +332,6 @@ https-proxy-agent (7.0.4)
 - License: MIT
 - Project: https://www.npmjs.com/package/https-proxy-agent
 
-immediate (3.0.6)
-
-- License: MIT
-- Project: https://www.npmjs.com/package/immediate
-
-inherits (2.0.4)
-
-- License: ISC
-- Project: https://www.npmjs.com/package/inherits
-
 io-ts (2.2.21)
 
 - License: MIT
@@ -387,25 +352,10 @@ is-glob (4.0.3)
 - License: MIT
 - Project: https://www.npmjs.com/package/is-glob
 
-is-interactive (2.0.0)
-
-- License: MIT
-- Project: https://www.npmjs.com/package/is-interactive
-
 is-number (7.0.0)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/is-number
-
-is-unicode-supported (1.3.0)
-
-- License: MIT
-- Project: https://www.npmjs.com/package/is-unicode-supported
-
-isarray (1.0.0)
-
-- License: MIT
-- Project: https://www.npmjs.com/package/isarray
 
 isexe (3.1.1)
 
@@ -427,7 +377,7 @@ js-yaml (4.1.0)
 - License: MIT
 - Project: https://www.npmjs.com/package/js-yaml
 
-jsonfile (4.0.0)
+jsonfile (6.1.0)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/jsonfile
@@ -436,16 +386,6 @@ jsonschema (1.4.1)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/jsonschema
-
-jszip (3.10.1)
-
-- License: (MIT OR GPL-3.0-or-later)
-- Project: https://www.npmjs.com/package/jszip
-
-lie (3.3.0)
-
-- License: MIT
-- Project: https://www.npmjs.com/package/lie
 
 linkify-it (5.0.0)
 
@@ -471,11 +411,6 @@ lodash.truncate (4.4.2)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/lodash.truncate
-
-log-symbols (5.1.0)
-
-- License: MIT
-- Project: https://www.npmjs.com/package/log-symbols
 
 log4js (6.4.6)
 
@@ -517,12 +452,7 @@ mime-types (2.1.35)
 - License: MIT
 - Project: https://www.npmjs.com/package/mime-types
 
-mimic-fn (2.1.0)
-
-- License: MIT
-- Project: https://www.npmjs.com/package/mimic-fn
-
-ms (2.1.3)
+ms (2.1.2)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/ms
@@ -542,20 +472,10 @@ node-diff3 (2.1.2)
 - License: MIT
 - Project: https://www.npmjs.com/package/node-diff3
 
-onetime (5.1.2)
-
-- License: MIT
-- Project: https://www.npmjs.com/package/onetime
-
 opener (1.5.2)
 
 - License: (WTFPL OR MIT)
 - Project: https://www.npmjs.com/package/opener
-
-ora (7.0.1)
-
-- License: MIT
-- Project: https://www.npmjs.com/package/ora
 
 p-limit (2.3.0)
 
@@ -571,11 +491,6 @@ p-try (2.2.0)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/p-try
-
-pako (1.0.11)
-
-- License: (MIT AND Zlib)
-- Project: https://www.npmjs.com/package/pako
 
 path-exists (4.0.0)
 
@@ -601,11 +516,6 @@ prettyjson (1.2.2)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/prettyjson
-
-process-nextick-args (2.0.1)
-
-- License: MIT
-- Project: https://www.npmjs.com/package/process-nextick-args
 
 progress (2.0.3)
 
@@ -637,11 +547,6 @@ read (1.0.7)
 - License: ISC
 - Project: https://www.npmjs.com/package/read
 
-readable-stream (3.6.2)
-
-- License: MIT
-- Project: https://www.npmjs.com/package/readable-stream
-
 readline-sync (1.4.10)
 
 - License: MIT
@@ -656,11 +561,6 @@ require-directory (2.1.1)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/require-directory
-
-restore-cursor (4.0.0)
-
-- License: MIT
-- Project: https://www.npmjs.com/package/restore-cursor
 
 reusify (1.0.4)
 
@@ -677,25 +577,10 @@ run-parallel (1.2.0)
 - License: MIT
 - Project: https://www.npmjs.com/package/run-parallel
 
-rxjs (7.4.0)
-
-- License: Apache-2.0
-- Project: https://www.npmjs.com/package/rxjs
-
-safe-buffer (5.2.1)
-
-- License: MIT
-- Project: https://www.npmjs.com/package/safe-buffer
-
 semver (7.5.4)
 
 - License: ISC
 - Project: https://www.npmjs.com/package/semver
-
-setimmediate (1.0.5)
-
-- License: MIT
-- Project: https://www.npmjs.com/package/setimmediate
 
 shebang-command (2.0.0)
 
@@ -707,11 +592,6 @@ shebang-regex (3.0.0)
 - License: MIT
 - Project: https://www.npmjs.com/package/shebang-regex
 
-signal-exit (3.0.7)
-
-- License: ISC
-- Project: https://www.npmjs.com/package/signal-exit
-
 slice-ansi (4.0.0)
 
 - License: MIT
@@ -722,32 +602,22 @@ stack-trace (0.0.10)
 - License: MIT
 - Project: https://www.npmjs.com/package/stack-trace
 
-stdin-discarder (0.1.0)
-
-- License: MIT
-- Project: https://www.npmjs.com/package/stdin-discarder
-
 streamroller (3.1.5)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/streamroller
 
-string-width (6.1.0)
+string-width (4.2.3)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/string-width
 
-string_decoder (1.3.0)
-
-- License: MIT
-- Project: https://www.npmjs.com/package/string_decoder
-
-strip-ansi (7.1.0)
+strip-ansi (6.0.1)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/strip-ansi
 
-supports-color (7.2.0)
+supports-color (8.1.1)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/supports-color
@@ -786,11 +656,6 @@ universalify (0.1.2)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/universalify
-
-util-deprecate (1.0.2)
-
-- License: MIT
-- Project: https://www.npmjs.com/package/util-deprecate
 
 which (2.0.2)
 
