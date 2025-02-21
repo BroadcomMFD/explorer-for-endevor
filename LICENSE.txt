@@ -1,49 +1,23 @@
-© 2024 Broadcom Inc and/or its subsidiaries; All rights reserved 
+© 2025 Broadcom Inc and/or its subsidiaries; All rights reserved
 
 This software and all information contained therein is
 confidential and proprietary and shall not be duplicated,
 used, disclosed, or disseminated in any way except as
 authorized by the applicable license agreement, without the
-express written permission of Broadcom.  All authorized
+express written permission of Broadcom. All authorized
 reproductions must be marked with this language.
 
 EXCEPT AS SET FORTH IN THE APPLICABLE LICENSE AGREEMENT, TO
 THE EXTENT PERMITTED BY APPLICABLE LAW, BROADCOM PROVIDES THIS
 SOFTWARE WITHOUT WARRANTY OF ANY KIND, INCLUDING WITHOUT
 LIMITATION, ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR
-FITNESS FOR A PARTICULAR PURPOSE.  IN NO EVENT WILL BROADCOM
+FITNESS FOR A PARTICULAR PURPOSE. IN NO EVENT WILL BROADCOM
 BE LIABLE TO THE END USER OR ANY THIRD PARTY FOR ANY LOSS OR
 DAMAGE, DIRECT OR INDIRECT, FROM THE USE OF THIS SOFTWARE,
 INCLUDING WITHOUT LIMITATION, LOST PROFITS, BUSINESS
 INTERRUPTION, GOODWILL, OR LOST DATA, EVEN IF BROADCOM IS
 EXPRESSLY ADVISED OF SUCH LOSS OR DAMAGE.
 
-
----
-
-SEE LICENSE IN LICENSE
-(@broadcom/endevor-bridge-for-git-rest-api 0.2.21)
-
-Copyright (c) 2019 Broadcom.  All Rights Reserved.  The term
-"Broadcom" refers to Broadcom Inc. and/or its subsidiaries.
-
-This software and all information contained therein is
-confidential and proprietary and shall not be duplicated,
-used, disclosed, or disseminated in any way except as
-authorized by the applicable license agreement, without the
-express written permission of Broadcom.  All authorized
-reproductions must be marked with this language.
-
-EXCEPT AS SET FORTH IN THE APPLICABLE LICENSE AGREEMENT, TO
-THE EXTENT PERMITTED BY APPLICABLE LAW, BROADCOM PROVIDES THIS
-SOFTWARE WITHOUT WARRANTY OF ANY KIND, INCLUDING WITHOUT
-LIMITATION, ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR
-FITNESS FOR A PARTICULAR PURPOSE.  IN NO EVENT WILL BROADCOM
-BE LIABLE TO THE END USER OR ANY THIRD PARTY FOR ANY LOSS OR
-DAMAGE, DIRECT OR INDIRECT, FROM THE USE OF THIS SOFTWARE,
-INCLUDING WITHOUT LIMITATION, LOST PROFITS, BUSINESS
-INTERRUPTION, GOODWILL, OR LOST DATA, EVEN IF BROADCOM IS
-EXPRESSLY ADVISED OF SUCH LOSS OR DAMAGE.
 
 ---
 
@@ -511,7 +485,7 @@ SOFTWARE.
 ---
 
 EPL-2.0
-(@zowe/imperative 5.27.5)
+(@zowe/imperative 5.27.7)
 
 Eclipse Public License - v 2.0
 
@@ -2059,7 +2033,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ---
 
 MIT
-(io-ts 2.2.21)
+(io-ts 2.2.22)
 
 MIT License
 
@@ -2683,7 +2657,7 @@ SOFTWARE.
 ---
 
 MIT
-(micromatch 4.0.5)
+(micromatch 4.0.8)
 
 The MIT License (MIT)
 
@@ -3687,7 +3661,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ---
 
 BSD-3-Clause
-(table 6.8.2)
+(table 6.9.0)
 
 Copyright (c) 2018, Gajus Kuizinas (http://gajus.com/)
 All rights reserved.
@@ -3744,7 +3718,7 @@ THE SOFTWARE.
 ---
 
 MIT
-(ts-loader 9.5.1)
+(ts-loader 9.5.2)
 
 The MIT License (MIT)
 
@@ -3826,7 +3800,7 @@ OTHER DEALINGS IN THE SOFTWARE.
 ---
 
 MIT
-(undici 5.28.4)
+(undici 5.28.5)
 
 MIT License
 

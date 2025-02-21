@@ -83,9 +83,27 @@ Ensure that you meet the following prerequisites before you use Explorer for End
 
   - (Optional) For the text search feature to work, ensure that you install EWS 2.15 or higher. Install PTF LU10870.
 
+- Endevor security requirement for COBOL LSP with automatic dependency retrieval:
+
+  Ensure that you have access to the following pseudo data sets that are defined in the ESI table for the inventory location where the processors reside:
+
+  ```
+  ENVIRONMENT_ACCESS
+  PRIMARY_OPTIONS - PRINT MENUITEM 
+  ACTION_INITIATION - DISPLAY MENUAUTH (ACTION)
+  ```
+
+  Ask your Endevor administrator to provide access if you are not authorized to access the previously mentioned data sets.
+
 ## Getting Started
 
 Create an Endevor connection and Endevor inventory location and review use cases to see how you can use the full potential of Explorer for Endevor. Alternatively, use your existing Zowe CLI Endevor profiles to get started.
+
+Explorer for Endevor 1.10.0 includes the following new features and changes:
+
+- Specify the limit for the number of filtered elements using the Element text search feature. Default: 1000 elements.
+
+- Ability to set the package ID filter to reduce the amount of displayed package data. The feature helps you save mainframe resources by limiting the number of fetched packages.
 
 Explorer for Endevor 1.9.0 includes the following new features and changes:
 
@@ -97,23 +115,10 @@ Explorer for Endevor 1.9.0 includes the following new features and changes:
 
 - Inventory locations support elements. Also, now you can wildcard `/system/subsystem/type/element`. To start working with inventory locations, specify the environment and stage number.
 
-Explorer for Endevor 1.8.0 includes the following new features and changes:
-
-- View full element history, including original elements from up the map.
-
-- A new filter is introduced — search elements by text.
-
-- Delete elements.
-
-- Create a package with the name that was generated using the `GENPKGID` exit.
-
-- Show SCL using the packages-related options.
-
-- Select multiple listings.
-
 - The C1MSGSA, an API Execution report, is added to available reports. Review the **Reports View** section to know how to navigate to the reports view and obtain this type of reports.
 
-### Walkthroughs
+<details>
+<summary><font size="+1"><b>Walkthroughs</b></font></summary>
 
 VS Code enables you to review walkthroughs to get started with Explorer for Endevor. The walkthrough contains short guides that help you get familiar with the extension features.
 
@@ -125,7 +130,10 @@ VS Code enables you to review walkthroughs to get started with Explorer for Ende
 
 4. Select a feature that you want to discover.
 
-### Create an Endevor Connection
+</details>
+
+<details>
+<summary><font size="+1"><b>Create an Endevor Connection</b></font></summary>
 
 Create an Endevor connection.
 
@@ -155,7 +163,10 @@ Create an Endevor connection.
 
 Your new connection is now available in the Endevor Elements view.
 
-### Create an Endevor Inventory Location
+</details>
+
+<details>
+<summary><font size="+1"><b>Create an Endevor Inventory Location</b></font></summary>
 
 Once you have an Endevor connection, you need to add an inventory location. An inventory location consists of an Endevor instance, Endevor path with environment, system, subsystem, stage number, element type, CCID, and Comment. Inventory locations enable you to view and work with elements of specified Endevor locations.
 
@@ -178,6 +189,8 @@ Once you have an Endevor connection, you need to add an inventory location. An i
    - You can cancel the creation of Endevor inventory location at any step by pressing Escape.
 
 You successfully created an inventory location.
+
+</details>
 
 ## Token Authentication and PassTickets
 
@@ -255,6 +268,8 @@ You apply one filter or multiple filters to the Endevor elements that were fetch
    - Select the **By Element Text** option.
 
      The Explorer dialog appears. Type text to filter by. Use **AND** or **OR** to separate multiple search strings. You can search for the text in Element source, history, changes, or summary.
+
+     Also, you can set a limit to the number of elements you want to filter. For more information, see the **Endevor: Element List Limit** option in the [Configure Explorer for Endevor](#configure-explorer-for-endevor) section.
 
 3. Press Enter to confirm your choice.
 
@@ -466,7 +481,7 @@ You successfully displayed the packages.
 
 ### Filter Packages
 
-You can apply a status filter when listing packages in the Endevor instance for the first time. The filter reduces the number of packages that are pulled from Endevor based on the status.
+You can apply a status filter when fetching packages from the Endevor instance for the first time. The filter reduces the number of packages that are pulled from Endevor based on the status. Additionally, you can apply a package ID filter to reduce the number of displayed packages and save more mainframe resources.
 
 1. Right-click the filter icon at the top of the list in the **Endevor Element** view and select the **Change Filter** option.
 
@@ -474,7 +489,9 @@ You can apply a status filter when listing packages in the Endevor instance for 
 
    **Note:** If all statuses are selected, no packages are filtered out.
 
-You successfully applied a filter to the listed packages.
+3. (Optional) Specify a package ID to fetch packages that match the ID only and press **Enter**. Alternatively, click on the plus button in the top right corner of the dialog to fetch packages that match the status filer only.
+
+You successfully applied filters to the fetched packages.
 
 ### Cast a Package
 
@@ -869,6 +886,10 @@ You can configure the following settings of the extension:
 
 - Endevor: Ask for CCID/Comment. The option enables prompting for CCID/Comment.
 
+- Endevor: Element List Limit. The option enables you to set a maximum number of elements that are filtered in the **Endevor Elements** view when you use the **Element Text** filter. This option improves the speed of Element text-based filtering and saves your mainframe resources. The default number of searched elements is 10000. To enable the unlimited filtering, set the value to 0.
+
+  **Note**: Setting the limit value to 0 decreases the filtering speed by consuming more mainframe resources.
+
 Access the Explorer for Endevor settings by clicking **Settings** > **Extensions** > **Explorer for Endevor**.
 
 ## List of Limitations
@@ -899,9 +920,9 @@ For more information, see [COBOL LSP](https://marketplace.visualstudio.com/items
 
 ## Zowe Conformance Program
 
-<a href="https://www.openmainframeproject.org/all-projects/zowe/conformance"><img src="images/zowe-conformant.png" alt="Zowe Conformance Badge" width="200" height="160"/></a>
+<a href="https://www.openmainframeproject.org/all-projects/zowe/conformance"><img src="images/zowe-v3-conformant-badge.png" alt="Zowe Explorer V3 Conformance Badge" width="200" height="160"/></a>
 
-Explorer for Endevor is Zowe V2 Conformant. The Zowe Conformance Program ensures a high level of common functionality, interoperability, and user experience while using an extension that leverages Zowe. For more information, see [Zowe Conformance Program](https://www.openmainframeproject.org/all-projects/zowe/conformance).
+Explorer for Endevor is Zowe Explorer V3 Conformant. The Zowe Conformance Program ensures a high level of common functionality, interoperability, and user experience while using an extension that leverages Zowe. For more information, see [Zowe Conformance Program](https://www.openmainframeproject.org/all-projects/zowe/conformance).
 
 ## Privacy Notice
 
@@ -946,4 +967,4 @@ Note: To receive technical assistance and support, you must remain compliant wit
 
 ---
 
-Copyright © 2024 Broadcom. The term "Broadcom" refers to Broadcom Inc. and/or its subsidiaries.
+Copyright © 2025 Broadcom. The term "Broadcom" refers to Broadcom Inc. and/or its subsidiaries.

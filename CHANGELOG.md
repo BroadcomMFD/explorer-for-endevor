@@ -2,6 +2,27 @@
 
 You can find all notable changes to Explorer for Endevor in this document.
 
+## [1.10.0] &ndash; 2025-02-21
+
+### Added
+
+- Added a package ID filter to reduce amount of packages information to initially retrieve.
+- Added element text filter limit support. The default maximum amount of elements to be filtered is set to 10 000 and can be adjusted using a new extension setting.
+
+### Changed
+
+- By default, only the 'In Edit' status is pre-selected in the package status filter to reduce the amount of packages information to initially retrieve.
+- By default, the 'Validate' Components Validation option is pre-selected in Cast Package Options.
+
+### Fixed
+
+- Fixed an issue that led to the internal errors for the specific processor configurations. This issue caused problems fetching the dependencies for COBOL Language Support VS Code extension integration.
+- Fixed an issue that caused moved elements to be erroneously marked as out-of-sync.
+- Fixed an issue that prevented edited elements from being uploaded back to Endevor if the DSN validation option is enabled.
+- Fixed an issue with the partial system/subsystem masking that did not work when specified in the Endevor inventory location.
+- Fixed an issue when element uploading fails with the Generate After option enabled.
+- Corrected some misleading messages and titles.
+
 ## [1.9.2] &ndash; 2024-12-18
 
 ### Added

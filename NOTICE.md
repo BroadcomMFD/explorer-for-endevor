@@ -87,7 +87,7 @@ This project leverages the following third party content.
 - License: MIT
 - Project: https://www.npmjs.com/package/@vscode/extension-telemetry
 
-@zowe/imperative (5.27.5)
+@zowe/imperative (5.27.7)
 
 - License: EPL-2.0
 - Project: https://www.npmjs.com/package/@zowe/imperative
@@ -332,7 +332,7 @@ https-proxy-agent (7.0.4)
 - License: MIT
 - Project: https://www.npmjs.com/package/https-proxy-agent
 
-io-ts (2.2.21)
+io-ts (2.2.22)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/io-ts
@@ -437,7 +437,7 @@ merge2 (1.4.1)
 - License: MIT
 - Project: https://www.npmjs.com/package/merge2
 
-micromatch (4.0.5)
+micromatch (4.0.8)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/micromatch
@@ -622,7 +622,7 @@ supports-color (8.1.1)
 - License: MIT
 - Project: https://www.npmjs.com/package/supports-color
 
-table (6.8.2)
+table (6.9.0)
 
 - License: BSD-3-Clause
 - Project: https://www.npmjs.com/package/table
@@ -632,7 +632,7 @@ to-regex-range (5.0.1)
 - License: MIT
 - Project: https://www.npmjs.com/package/to-regex-range
 
-ts-loader (9.5.1)
+ts-loader (9.5.2)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/ts-loader
@@ -647,7 +647,7 @@ underscore (1.13.6)
 - License: MIT
 - Project: https://www.npmjs.com/package/underscore
 
-undici (5.28.4)
+undici (5.28.5)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/undici
