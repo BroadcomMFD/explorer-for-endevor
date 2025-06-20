@@ -2,10 +2,10 @@
 
 <div id="header" align="center">
 
-[![Version](https://img.shields.io/badge/version-1.9.2-brightgreen)](https://marketplace.visualstudio.com/items/broadcomMFD.explorer-for-endevor/changelog)
-[![Downloads](https://img.shields.io/visual-studio-marketplace/d/broadcomMFD.explorer-for-endevor)](https://marketplace.visualstudio.com/items/broadcomMFD.explorer-for-endevor)
+[![Version](https://img.shields.io/badge/version-1.11.1-brightgreen)](https://marketplace.visualstudio.com/items/broadcomMFD.explorer-for-endevor/changelog)
+[![Installs](https://img.shields.io/badge/installs-17k+-blue)](https://marketplace.visualstudio.com/items/broadcomMFD.explorer-for-endevor)
 [![GitHub issues](https://img.shields.io/github/issues/BroadcomMFD/explorer-for-endevor)](https://github.com/BroadcomMFD/explorer-for-endevor/issues)
-[![Slack](https://img.shields.io/badge/chat-on%20Slack-blue)](https://che4z.slack.com/archives/CQNJDQFFX)
+[![Slack](https://img.shields.io/badge/chat-on%20Slack-purple)](https://che4z.slack.com/archives/CQNJDQFFX)
 [![Support](https://img.shields.io/badge/Broadcom-support-red)](https://www.broadcom.com/support)
 
 </div>
@@ -13,65 +13,48 @@
 The Explorer for Endevor VS Code extension modernizes the way you interact with Endevor and offers a user-friendly and convenient way to work with elements and inventory locations. Explorer for Endevor includes the following features:
 
 - Work with multiple Endevor inventory locations
-- Filter elements in the **Endevor Elements** view
-- Select Search mode for the elements in the **Endevor Elements** view
-- Add an element
-- View an element
-- Edit an element
-- Move an element
-- Delete an element
-- Create and synchronize an Endevor workspace
-- Create a package
-- Cast and reset a package
-- List and filter packages
-- View element details
-- View history of elements
-- View the element diff in element history
-- Check action reports
-- Perform a Generate action
-- Print a listing
-- Select multiple listings
-- Read team configuration files and Zowe CLI profiles (including Zowe base profiles)
-- Leverage a basic SCL highlighter
+- Navigate and filter elements in the **Endevor Elements** view
+- Manage elements (add, edit, generate, move, and more)
+- Work with listings
+- Manage packages (create, update, cast, and more)
+- Leverage a basic Software Control Language (SCL) support (statements highlighting)
+- Access reports (C1MSGS1, APIMSGS, and C1MSGSA)
+- Work with Endevor synchronized workspaces
+- Manage Endevor connections and inventory location in team config files (Zowe integration)
+- Access API Mediation Layer, using base profiles (Zowe integration)
+
+The extension streamlines the way you access and edit your Endevor-based source code, saving your mainframe resources. You can navigate your Endevor environments, work with packages, print listings, access reports and more from the convenience of a lightweight IDE.
 
 Explorer for Endevor is a part of [Code4z](https://techdocs.broadcom.com/code4z), an all-round VS Code extension package that offers a modern experience for mainframe application developers, including tools for language support, data editing, testing, and source code management. For an interactive overview of Code4z, see the [Code4z Developer Cockpit](https://mainframe.broadcom.com/code4z-developer-cockpit).
 
-## Table of Contents <!-- omit in toc -->
+We encourage you to share ideas to help improve Explorer for Endevor. You can also report issues in the extension, using the following link.
 
-- [Prerequisites](#prerequisites)
-- [Getting Started](#getting-started)
-  - [Walkthroughs](#walkthroughs)
-  - [Create an Endevor Connection](#create-an-endevor-connection)
-  - [Create an Endevor Inventory Location](#create-an-endevor-inventory-location)
-- [Token Authentication and PassTickets](#token-authentication-and-passtickets)
-- [Workspace Synchronization](#workspace-synchronization)
-- [Use Cases](#use-cases)
-- [Retrieve elements into a local folder](#retrieve-elements-into-a-local-folder)
-- [Base Profiles](#base-profiles)
-  - [Access Zowe API Mediation Layer](#access-zowe-api-mediation-layer)
-- [Team Configuration File](#team-configuration-file)
-- [Reports View](#reports-view)
-- [Packages View](#packages-view)
-- [Manage the Extension Tree](#manage-the-extension-tree)
-- [Configure Explorer for Endevor](#configure-explorer-for-endevor)
-- [List of Limitations](#list-of-limitations)
-- [Contribute to Explorer for Endevor](#contribute-to-explorer-for-endevor)
-- [COBOL Language Support](#cobol-language-support)
-- [Zowe Conformance Program](#zowe-conformance-program)
-- [Privacy Notice](#privacy-notice)
-- [Technical Assistance and Support for Explorer for Endevor](#technical-assistance-and-support-for-explorer-for-endevor)
+> [Share an idea or open an issue in our Git repository](https://github.com/BroadcomMFD/explorer-for-endevor/issues)
 
-## Prerequisites
+<details>
+<summary id="announce"><span style="font-size: 1.5em"><b>Announcements and News</b></span><hr></summary>
+
+- REST API v1 `EndevorService/api/v1` and `EndevorService/rest` will no longer be supported in **Explorer for Endevor 2.0.0** (release plan - End of 2025). Ensure that you use REST API v2 `EndevorService/api/v2` in `basePath` in your Endevor connections to avoid business disruptions.
+
+- **Mainframe Technical Exchanges**: June and October 2025
+
+  Join us for the Mainframe Technical Exchanges virtually (June 24-26) and in Plano, Texas (October 15-17). Connect with Mainframe Experts who will share the latest technical education and product demos and respond to your questions and feedback. These educational events are a great way to network with peers and experts from across the globe.
+
+  Bookmark this page, [Join Us for the Mainframe Technical Exchanges](https://engage.broadcom.com/mainframe_beyond_code_mainframe_technical_exchange), for current registration and event information.
+  </details>
+
+<details>
+<summary id="compat"><span style="font-size: 1.5em"f><b>Address Software Requirements</b></span><hr></summary>
 
 Ensure that you meet the following prerequisites before you use Explorer for Endevor:
 
-**Client-side prerequisites**:
+**Client-side Software Requirements**:
 
 - Access to Endevor.
 - Visual Studio Code version 1.82 or higher.
 - (Optional) For the text search feature to work, ensure that you use Endevor REST API v2 with basepath `EndevorService/api/v2`.
 
-**Host-side prerequisites**:
+**Host-side Software Requirements**:
 
 - Endevor 18.0.12 or higher:
 
@@ -83,57 +66,27 @@ Ensure that you meet the following prerequisites before you use Explorer for End
 
   - (Optional) For the text search feature to work, ensure that you install EWS 2.15 or higher. Install PTF LU10870.
 
-- Endevor security requirement for COBOL LSP with automatic dependency retrieval:
+**Endevor Security Requirements for COBOL LS with Automatic Dependency Retrieval:**
 
-  Ensure that you have access to the following pseudo data sets that are defined in the ESI table for the inventory location where the processors reside:
+- Ensure that you have access to the following pseudo data sets that are defined in the ESI table for the inventory location where the processors reside:
 
   ```
   ENVIRONMENT_ACCESS
-  PRIMARY_OPTIONS - PRINT MENUITEM 
+  PRIMARY_OPTIONS - PRINT MENUITEM
   ACTION_INITIATION - DISPLAY MENUAUTH (ACTION)
   ```
 
   Ask your Endevor administrator to provide access if you are not authorized to access the previously mentioned data sets.
 
-## Getting Started
-
-Create an Endevor connection and Endevor inventory location and review use cases to see how you can use the full potential of Explorer for Endevor. Alternatively, use your existing Zowe CLI Endevor profiles to get started.
-
-Explorer for Endevor 1.10.0 includes the following new features and changes:
-
-- Specify the limit for the number of filtered elements using the Element text search feature. Default: 1000 elements.
-
-- Ability to set the package ID filter to reduce the amount of displayed package data. The feature helps you save mainframe resources by limiting the number of fetched packages.
-
-Explorer for Endevor 1.9.0 includes the following new features and changes:
-
-- REST API v1 `EndevorService/api/v1` and `EndevorService/rest` will no longer be supported in **Explorer for Endevor 2.0.0**. Follow the instructions in the [Endevor Connection](#create-an-endevor-connection) section to address the upcoming breaking changes.
-
-- Resolve out-of-sync elements. Review the [feature description](#out-of-sync) to learn about how to use the new functionality.
-
-- Select a listing that is stored in a specific member in a listing data set. This change enhances the **Print a Listing** feature.
-
-- Inventory locations support elements. Also, now you can wildcard `/system/subsystem/type/element`. To start working with inventory locations, specify the environment and stage number.
-
-- The C1MSGSA, an API Execution report, is added to available reports. Review the **Reports View** section to know how to navigate to the reports view and obtain this type of reports.
-
-<details>
-<summary><font size="+1"><b>Walkthroughs</b></font></summary>
-
-VS Code enables you to review walkthroughs to get started with Explorer for Endevor. The walkthrough contains short guides that help you get familiar with the extension features.
-
-1. Click **Help** in the menu bar.
-
-2. Select **Get Started** from the drop-down menu.
-
-3. Select the **Get Started with Explorer for Explorer** walkthrough or click **More...** to select the walkthrough if it is not displayed immediately.
-
-4. Select a feature that you want to discover.
-
 </details>
 
 <details>
-<summary><font size="+1"><b>Create an Endevor Connection</b></font></summary>
+<summary id="compat"><span style="font-size: 1.5em"><b>Getting Started</b></span><hr></summary>
+
+Create an Endevor connection and Endevor inventory location to get started with Explorer for Endevor. Alternatively, use your existing Zowe CLI Endevor profiles to get started.
+
+<details>
+<summary id="connection"><span style="font-size: 1.2em" style="color: blue">Create Endevor Connection</span></summary>
 
 Create an Endevor connection.
 
@@ -156,7 +109,7 @@ Create an Endevor connection.
 
    Adding your credentials to your connection enables you to access different inventory locations without the need to enter your credentials more than once.
 
-   **Notes**:
+   **Notes:**
 
    - If your connection does not include credentials during the first session of Explorer for Endevor, you are prompted to enter credentials.
    - Passwords with 9 or more characters are treated as a _passphrase_ by the server and are case-sensitive.
@@ -166,7 +119,7 @@ Your new connection is now available in the Endevor Elements view.
 </details>
 
 <details>
-<summary><font size="+1"><b>Create an Endevor Inventory Location</b></font></summary>
+<summary id="location"><span style="font-size: 1.2em">Create Endevor Inventory Location</span></summary>
 
 Once you have an Endevor connection, you need to add an inventory location. An inventory location consists of an Endevor instance, Endevor path with environment, system, subsystem, stage number, element type, CCID, and Comment. Inventory locations enable you to view and work with elements of specified Endevor locations.
 
@@ -177,7 +130,7 @@ Once you have an Endevor connection, you need to add an inventory location. An i
 
    The path has the `environment/stagenum[/system/subsystem/type/element]` format.
 
-   **Notes**:
+   **Notes:**
 
    - If you are unsure about the system, subsystem, type, or element parameters, you can substitute any of these parameters with a `\*` wildcard.
    - The elements search function is executed with the `Build using map` Endevor list option.
@@ -192,27 +145,92 @@ You successfully created an inventory location.
 
 </details>
 
-## Token Authentication and PassTickets
+<details>
+<summary id="walk"><span style="font-size: 1.2em">Walkthroughs</span></summary>
 
-The Explorer for Endevor Token Authentication feature attempts to use temporary tokens (PassTickets) that are generated by the Endevor Authentication to sign on to the Endevor Web Services. The feature is enabled by default. You can disable the feature, using the **Use Token Authentication** option in the extension settings.
+VS Code enables you to review walkthroughs to get started with Explorer for Endevor. The walkthrough contains short guides that help you get familiar with the extension features.
 
-**Note:** If the token support is not configured on the Endevor Web Services or the **Use Token Authentication** setting is disabled, a basic authentication with username and password is used instead.
+1. Click **Help** in the main menu bar.
 
-For more information on PassTickets, check the [Multi-Factor Authentication (MFA)](https://techdocs.broadcom.com/us/en/ca-mainframe-software/devops/ca-endevor-software-change-manager/19-0/securing/multi-factor-authentication-mfa.html) in the Endevor documentation.
+2. Select **Open Walkthrough...** from the drop-down menu. If the option is not present, you can access the **Walkthroughs** section using the **Welcome** menu item.
 
-## Workspace Synchronization
+3. Select the **Get Started with Explorer for Explorer** walkthrough. If you are on the welcome page and the walkthrough is not visible immediately, click **More...** below the **Walkthroughs** section.
 
-A synchronized Endevor workspace enables you to work with inventory locations locally and synchronize elements from and to Endevor on the mainframe. You can create an Endevor workspace in your VS Code by enabling the **Workspace Sync** setting in the extension settings. Synchronized elements appear in the selected folder and you can see them in the **File Explorer** panel. You can manage the workspace from VS Code with Explorer for Endevor extension installed.
+4. Select available walkthroughs to discover more features.
 
-**Note:** The feature is experimental. Use this feature at your own discretion.
+</details>
 
-For more information on the setting, see [Configure Explorer for Endevor](#configure-explorer-for-endevor) in this Readme.
+<details>
+<summary id="compat"><span style="font-size: 1.2em">(Optional) Customize Extension Settings</span></summary>
 
-To learn more about the Endevor Workspace synchronization feature, read [this article](https://medium.com/modern-mainframe/editing-synchronized-endevor-elements-locally-ff096d09eb5e) on Medium or review [the extension walkthroughs](#get-started-walkthroughs) in VS Code.
+You can configure the following settings of the extension:
 
-## Use Cases
+- The number of parallel HTTP requests supported by Endevor.
 
-Review the following use cases to familiarize yourself with the basic Explorer for Endevor features:
+- Automatic Signout. The signout function locks elements for you. If the option is enabled, retrieved or edited elements are signed out to you. If an element is signed out to somebody else, a notification asking whether to override the signout pops up. If the option is disabled, the extension retrieves or edits an element without signout.
+
+- Telemetry level. You can disable or configure data that is collected by Telemetry in the VS Code Settings. Navigate to **Settings** > **Application** > **Telemetry** > **Telemetry Level** to do so. For more information, see [Disable Telemetry](https://code.visualstudio.com/docs/getstarted/telemetry#_disable-telemetry-reporting) in the VS Code documentation.
+
+  **Note:** This setting applies not only to Explorer for Endevor but to all extensions in your VS Code.
+
+- Profiles: Keep in Sync. The option enables you to use a team configuration file that stores your pre-saved Endevor configuration or Zowe CLI Endevor profiles with Endevor locations in the extension. By default, the setting is enabled, meaning that the extension reads your team configuration files on startup and displays profile information in the **Endevor Elements** view. If the option is disabled, the extension does not check the `.zowe` folder for available profiles.
+
+  **Note:** You can use Endevor connections and inventory locations that are created in Explorer for Endevor in the extension only.
+
+- File extension resolution. The option enables you to choose between the following methods of file extension resolution for the locally saved elements.
+
+  - 'Element name only' method uses the element name to determine the file extension.
+
+  - 'Endevor type file extension only' method uses the Endevor defined file extension for the type.
+
+  - (Default) 'Endevor type file extension or type name' method uses the Endevor defined file extension for the type. The method also uses the Endevor type name as a fall-back option.
+
+- (Experimental) Workspace Synchronization. The option enables the Endevor Workspace initialization that lets you create a synchronized Endevor workspace locally.
+
+  **Note:** Experimental features might include undiscovered errors. Please, use this feature at your own discretion.
+
+- Ask for Processor Group. The option enables selection of a processor group when you perform Generate, Add, or Upload actions. A selected processor group overrides the previously chosen processor group.
+
+- Generate Subsystem. The option enables the extension to add the Generate all Elements feature. The option is disabled by default. Once enabled, the feature appears in the **Endevor Elements** view. You can then perform the Generate all Elements action against a subsystem node.
+
+- Endevor: Allow Element Delete. The option enables the Delete feature and makes the feature available to you in the **Endevor Elements** view. The options is disabled by default.
+
+- Endevor: Ask for CCID/Comment. The option enables prompting for CCID/Comment.
+
+- Endevor: Element List Limit. The option enables you to set a maximum number of elements that are filtered in the **Endevor Elements** view when you use the **Element Text** filter. This option improves the speed of Element text-based filtering and saves your mainframe resources. The default number of searched elements is 10000. To enable the unlimited filtering, set the value to 0.
+
+  **Note:** Setting the limit value to 0 decreases the filtering speed by consuming more mainframe resources.
+
+- Endevor: Close on Upload. If true, when an edited element is uploaded to Endevor, the edit session will be automatically closed.
+
+Access the Explorer for Endevor settings by clicking **Settings** > **Extensions** > **Explorer for Endevor**.
+
+</details>
+
+<details>
+<summary id="Extension tree"><span style="font-size: 1.2em">(Optional) Manage Connections and Location in Extension Tree</span></summary>
+
+You can perform the following actions to manage your connections and inventory locations in the extension tree:
+
+- **Delete a connection**: Delete your connection permanently by right-clicking a connection node and selecting the **Delete a connection** option.
+
+- **Delete an inventory location**: Delete your inventory location permanently by right-clicking an inventory location node and selecting the **Delete an inventory location** option.
+
+- **Hide a connection**: If you do not want to list your connections in the **Endevor Elements** view, you can hide such connections. To hide a connection, right-click the connection node and select the **Hide a connection** option.
+
+- **Hide an inventory location**: If you do not want to list your inventory locations in the **Endevor Elements** view, you can hide such locations. To hide an inventory location, right-click the location node and select the **Hide an inventory location** option.
+
+- **Edit an Endevor Connection**: Edit your Endevor connection login details by right-clicking a connection node and selecting the **Edit an Endevor Connection** option.
+
+  **Note:** The **Hide a connection** or **Hide an inventory location** actions do not permanently delete the information from the extension.
+
+</details>
+</details>
+
+<details>
+<summary id="features"><span style="font-size: 1.5em"><b>Review Basic Functions</b></span><hr></summary>
+
+Review the following basic Explorer for Endevor features:
 
 - [Filter elements](#filter-elements): Filter one or multiple elements by names, types, last action CCIDs, or text.
 - [Select element search mode](#select-element-search-mode): Select one of two element search modes: the first found elements or all elements from up the Endevor map.
@@ -222,17 +240,9 @@ Review the following use cases to familiarize yourself with the basic Explorer f
 - [Move an element](#move-an-element): Move an element up the map by using the Endevor `move statement` with such options as **With History**, **Bypass Element Delete**, **Synchronize**, **Retain Signout**, and **Jump**.
 - [View details](#view-details): View the details of a chosen element. The details include the environment, stage, system, subsystem, element type, and the name and extension of the element.
 - [Show history](#show-history): Review the history of a selected element, including original elements from up the map.
-- [Generate all elements for a subsystem](#generate-all-elements-for-a-subsystem):
-  Generate the elements that are allocated in place in the selected subsystem, using a proper type sequence. Additionally, produce a detailed report that contains build status.
+- [Generate all elements for a subsystem](#generate-all-elements-for-a-subsystem): Generate the elements that are allocated in place in the selected subsystem, using a proper type sequence. Additionally, produce a detailed report that contains build status.
 - [Review the Generate report](#review-the-Generate-report): Review the C1MSGS1 Endevor batch execution report that is available to you once the **Generate in Place** or **Generate with Copyback** function is executed.
-- [Create a package](#create-a-package): You can create a package from multiple elements.
-  - [Create a Package using the GENPKGID option](#Create-a-package-name-using-the-genpkgid-option): The option invokes the Endevor GENPKGID exit functionality that generates a unique ID for a package.
-- [Show packages](#show-packages): Show packages from an Endevor instance.
-- [Filter packages](#filter-packages): Filter one or multiple packages by their status.
-- [Cast a package](#cast-a-package): You can cast a package using various cast options.
-- [Reset a package](#reset-a-package): The Reset action enables you to reset package back to the IN-EDIT status.
-- [Show Package SCL](#show-package-scl): The option shows SCL of a selected package.
-- [Edit](#edit): The Edit action enables you to download an element to your workspace, edit, and upload the selected element step by step. Once you are done with editing the element, press CTRL+S or Command+S to upload the edited element back.
+- [Edit](#edit): The Edit action enables you to download an element to your workspace, edit, and upload the selected element step by step. Once you are done with editing the element, press Ctrl+S or Command+S to upload the edited element back.
 - [Out-of-Sync](#out-of-sync): The option enables you to resolve the out-of-sync situations for elements that are marked with the out-of-sync status.
 - [Generate](#generate): Call the Generate action for an element to invoke the Generate Processor that creates an executable form of the element.
 - [Print a listing](#print-a-listing): Reveal the output of the performed Generate action.
@@ -344,7 +354,7 @@ You can view the contents, summary, and source level information of an element b
 
 You can permanently delete an element by clicking on the element in the **Endevor Elements** view and by selecting the **Delete** option.
 
-**Note**: By default, the feature is disabled. Navigate to the extension setting to enable the **Delete** option.
+**Note:** By default, the feature is disabled. Navigate to the extension setting to enable the **Delete** option.
 
 1. Hover over an element that you want to delete.
 2. Right-click on the element and select the **Delete** option.
@@ -428,7 +438,12 @@ You can retrieve the C1MSGS1 Endevor batch execution report that contains the de
 
 ### Generate All Elements for a Subsystem
 
-- **Generate All Elements** enables you to generate all the elements within a subsystem.
+The **Generate All Elements** action enables you to generate all the elements within a subsystem at once.
+
+**Notes:**
+
+- By default, the feature is disabled. Navigate to the extension setting to enable the **Generate All Elements** option.
+- This feature works with the sandboxed environments or subsystems that include a relatively small number of elements. A significant number of elements in a subsystem can cause disruptions.
 
 1. Hover over a subsystem.
 2. Click the **Generate All Elements** icon.
@@ -440,121 +455,6 @@ You can retrieve the C1MSGS1 Endevor batch execution report that contains the de
 ![Report Table](images/E4E-report-table-generate.gif?raw=true 'Report Table')
 <br /><br />
 
-### Create a Package
-
-Create a package from multiple elements. Select elements that you want to organize in a package and right-click on the selection to select the **Create/Update Package** option.
-
-1. Select an element or an array of elements by holding the **CTRL/Command** key and using the left mouse button.
-2. Right-click the selected element(s) and select the **Create/Update Package** option.
-3. Enter a name for the package.
-4. Enter a description for the package.
-5. Select options for the package.
-6. (Optional) Enter a CCID.
-7. (Optional) Enter a comment.
-8. Select **Move** command options for the package.
-
-You successfully created the package.
-
-You can find the package in the **Endevor Packages** view.
-
-![Create a Package](images/E4E-create-package.gif?raw=true 'Create a package')
-
-<br /><br />
-
-### Show packages
-
-Use the following ways to show packages from an Endevor instance.
-
-- Select an Endevor instance from the **Endevor Packages** view:
-
-  1. Hover over the **Endevor Packages** view toolbar and click **Change Instance**.
-  2. Select connection and configuration.
-  3. (Optional) Select a package status filter.
-
-- Use **Show Packages** from the **Endevor Element** view:
-
-  1. Right-click the Endevor inventory location in the **Endevor Element** view.
-  2. Select the **Show Packages** option.
-  3. (Optional) Select a package status filter.
-
-You successfully displayed the packages.
-
-### Filter Packages
-
-You can apply a status filter when fetching packages from the Endevor instance for the first time. The filter reduces the number of packages that are pulled from Endevor based on the status. Additionally, you can apply a package ID filter to reduce the number of displayed packages and save more mainframe resources.
-
-1. Right-click the filter icon at the top of the list in the **Endevor Element** view and select the **Change Filter** option.
-
-2. Select a status you want to filter.
-
-   **Note:** If all statuses are selected, no packages are filtered out.
-
-3. (Optional) Specify a package ID to fetch packages that match the ID only and press **Enter**. Alternatively, click on the plus button in the top right corner of the dialog to fetch packages that match the status filer only.
-
-You successfully applied filters to the fetched packages.
-
-### Cast a Package
-
-Use the **Cast** option against a package to prepare the package for review and subsequent execution.
-
-1. Right-click the package you want to cast and select the **Cast Package** option.
-
-2. (Optional) Select the following **Cast** options:
-
-   - **Backout Enabled**: Indicates whether the backout facility is available for the selected package.
-   - **Components Validation** (radio group):
-     - **Validate**: Enables component validation. If component validation fails, the cast fails, as well.
-     - **Do not validate**: Disables component validation for the package.
-     - **(Default) Validate with warnings**: Enables component validation and generates a warning if component validation fails.
-
-You successfully cast the package. You should see a notification pop-up with the **Show Execution Report** and **Cancel** options and the following message:
-
-```text
-Cast package ... using configuration ... was successful. Would you like to see the report?
-```
-
-If the cast of the package fails, the execution report is displayed automatically.
-
-### Reset a Package
-
-Use the **Reset** option against a package if you want to set status back to **In-edit**, which enables you to modify the package. You can use the **Reset** option against any package status type.
-
-1. Right-click a package.
-2. Select the **Reset Package** option.
-
-You successfully performed the **Reset Package** action.
-
-### Show Package SCL
-
-You can review SCL of your existing packages, using the **Show SCL** option.
-
-1. Navigate to the **Endevor Packages** view.
-
-2. Right-click the package whose SCL you want to review and select the **Show SCL** option.
-
-   The package SCL in shown in the editor area.
-
-You successfully displayed the package SCL.
-
-![Show Package SCL](images/E4E-show-scl.gif?raw=true 'Show Package SCL')
-
-### Create a Package Name using the GENPKGID option
-
-You can use the **GENPKGID** option to generate a unique package ID while creating a new package.
-
-**Note**: Ensure that the `GENPKGID` exit is configured on Endevor.
-
-1. Select an element or an array of elements by holding the **CTRL/Command** key and using the left mouse button.
-2. Right-click the selected element(s) and select the **Create/Updage Package** option.
-3. From the drop-down menu, select the **GENPKGID** option.
-4. Enter a description for the package.
-5. Select options for the package.
-6. (Optional) Enter a CCID.
-7. (Optional) Enter a comment.
-8. Select **Move** command options for the package.
-
-You successfully created a new package with an assigned package ID.
-
 ### Edit
 
 The **Edit** action lets you download an element, edit, and upload the element back.
@@ -564,11 +464,17 @@ The **Edit** action lets you download an element, edit, and upload the element b
 
    The contents of the element appear in the editor area. You can now edit the element.
 
-3. Press **CTLR+S** or **Command+S** when you want to save the edited element.
-4. Specify any accessible Endevor path and a name for the element.
-5. Enter a CCID.
-6. Enter a comment.
-7. (Optional) Resolve conflicts between the element versions if necessary.
+3. Press **Ctrl+S** or **Command+S** when you want to save the edited element.
+4. (Optional) Specify whether the element will be generated after uploading from the drop-down list.
+5. (Optional) Select a processor group from the drop-down list.
+6. (Optional) Enter a CCID.
+7. (Optional) Enter a Comment.
+
+   Alternatively, the values for CCID, Comment, and Generate After options can be set using the corresponding status bar items while editing the element.
+
+8. (Optional) Resolve conflicts between the element versions.
+
+**Note:** Using the VS Code **Files: Auto Save** feature (see [Save / Auto Save](https://code.visualstudio.com/docs/editing/codebasics#_save-auto-save) section in the VS Code documentation) with Explorer for Endevor results in a different experience while editing elements. The element changes that were automatically saved by the VS Code are not immediately synchronized back to Endevor. Make sure you pressed **Ctrl+S** or **Command+S** when you are ready to synchronize the changes.
 
 You successfully edited and saved the element.
 
@@ -636,7 +542,7 @@ You can use the **Generate in Place**, **Generate with Copyback**, or **Generate
 
 3. (Optional) Click **Print a listing** to see the Generate output.
 
-   **Note**: You can always review the Generate output by selecting the **Print a listing** option.
+   **Note:** You can always review the Generate output by selecting the **Print a listing** option.
 
 You successfully performed the Generate action.
 
@@ -683,7 +589,8 @@ The **Sign in** option enables you to unlock an element that earlier was signed 
 
 You successfully signed in the element.
 
-## Retrieve elements into a local folder
+<details id="retrieveElements">
+<summary id="retrieve"><span style="font-size: 1.2em">Retrieve Elements into local Folder</span></summary>
 
 **Note:** the Endevor functionality such as Generate, Move, Print listings are not be available if the elements are retrieved from Endevor to a local folder. If you want to use the native Endevor-based options with your elements, use the [Edit an element](#edit) or experimental [Workspace Synchronization](#workspace-synchronization) features instead of the **Retrieve Elements** option.
 
@@ -692,7 +599,7 @@ Ensure a Workspace folder is opened in VSCode so that you can retrieve elements.
 1. Navigate to the **File -> Open Folder** menu for the Open Folder dialog to appear.
 2. Select the folder you want your elements to be retrieved into and click the **Open** button.
 
-   **Note**: A VSCode session might be restarted for changes to be applied.
+   **Note:** A VSCode session might be restarted for changes to be applied.
 
 You now have the Workspace folder to retrieve elements into.
 
@@ -720,11 +627,218 @@ You successfully retrieved the element(s) with dependencies.
 ![Retrieve Element(s) with Dependencies](images/E4E-retrieve-dep.gif?raw=true 'Retrieve Element(s) with Dependencies')
 <br /><br />
 
-## Base Profiles
+</details>
 
-Explorer for Endevor enables you to use Zowe CLI base profiles. To make your default base profile work in the extension, ensure that you specify such parameters as username, password, host, port, and `rejectUnauthorized` in the base profile. For more information about how base profiles work, see [the Base Profile](https://docs.zowe.org/stable/user-guide/cli-using-using-profiles/#base-profiles) section on Zowe Docs.
+<details>
+<summary id="workspace"><span style="font-size: 1.2em">Use Synchronized Workspace</span></summary>
 
-### Access Zowe API Mediation Layer
+A synchronized Endevor workspace enables you to work with inventory locations locally and synchronize elements from and to Endevor on the mainframe. You can create an Endevor workspace in your VS Code by enabling the **Workspace Sync** setting in the extension settings. Synchronized elements appear in the selected folder and you can see them in the **File Explorer** panel. You can manage the workspace from VS Code with Explorer for Endevor extension installed.
+
+**Note:** The feature is experimental. Use this feature at your own discretion.
+
+For more information on the setting, see [Configure Explorer for Endevor](#configure-explorer-for-endevor) in this Readme.
+
+To learn more about the Endevor Workspace synchronization feature, read [this article](https://medium.com/modern-mainframe/editing-synchronized-endevor-elements-locally-ff096d09eb5e) on Medium or review [the extension walkthroughs](#get-started-walkthroughs) in VS Code.
+
+</details>
+
+<details id="reports">
+<summary id="viewReports"><span style="font-size: 1.2em">View Reports</span></summary>
+
+The extension enables you to monitor activity of the session in the Explorer for Endevor tab that you can access using the View tab. The Reports View feature helps you troubleshoot any errors that occur in the extension more efficiently.
+
+Use Reports View to keep track of events that happen during an active session of the extension and review execution errors or API notification messages.
+
+1. Navigate to the **View** tab in VS Code.
+
+2. Click **Command Palette...**.
+
+   The command prompt is displayed.
+
+3. Type **Explorer for Endevor: Focus on Endevor Reports View** and press Enter.
+
+The Report View is displayed.
+
+You can now click on events to expand them and access execution or API error reports.
+
+To see a list of Endevor messages and codes that were reported, hover over records of the warning or error messages.
+
+</details>
+</details>
+
+<details id="extraFeatures">
+<summary id="extraFewatures"><span style="font-size: 1.5em"><b>Review Package Actions</b></span><hr></summary>
+
+The extension enables you to see the Endevor packages in a specified Endevor instance, to filter the packages and perform package-related actions.
+
+You can perform the following actions to change the way packages are displayed and the order in which they are displayed:
+
+- **Show Packages Created by User**: Click on the **Show Packages Created by User** icon in the **Endevor Packages** view toolbar to show only packages created by currently logged in user.
+
+- **Descending/Ascending Order by Package ID**: Click on the **Descending/Ascending Order by Package ID** icon to toggle the order in which packages are shown.
+
+- **Change Instance**: Click on the **Change Instance** icon to change the Endevor instance whose packages are displayed.
+
+- **Refresh Endevor Packages**: Click on the **Refresh Endevor Packages** icon to retrieve packages information from Endevor, using the current Endevor instance and filter.
+
+<details id="createPackage">
+<summary><span style="font-size: 1.2em">Create Package</span></summary>
+
+Create a package from multiple elements. Select elements that you want to organize in a package and right-click on the selection to select the **Create/Update Package** option.
+
+1. Select an element or an array of elements by holding the **Ctrl/Command** key and using the left mouse button.
+2. Right-click the selected element(s) and select the **Create/Update Package** option.
+3. Enter a name for the package.
+4. Enter a description for the package.
+5. Select options for the package.
+6. (Optional) Enter a CCID.
+7. (Optional) Enter a comment.
+8. Select **Move** command options for the package.
+
+You successfully created the package.
+
+You can find the package in the **Endevor Packages** view.
+
+![Create a Package](images/E4E-create-package.gif?raw=true 'Create a package')
+
+</details>
+
+<details id="showPackage">
+<summary><span style="font-size: 1.2em">Show Packages</span></summary>
+
+Use the following ways to show packages from an Endevor instance.
+
+- Select an Endevor instance from the **Endevor Packages** view:
+
+  1. Hover over the **Endevor Packages** view toolbar and click **Change Instance**.
+  2. Select connection and configuration.
+  3. (Optional) Select a package status filter.
+
+- Use **Show Packages** from the **Endevor Element** view:
+
+  1. Right-click the Endevor inventory location in the **Endevor Element** view.
+  2. Select the **Show Packages** option.
+  3. (Optional) Select a package status filter.
+
+You successfully displayed the packages.
+
+</details>
+
+<details id="filterPackage">
+<summary><span style="font-size: 1.2em">Filter Package</span></summary>
+
+You can apply a status filter when fetching packages from the Endevor instance for the first time. The filter reduces the number of packages that are pulled from Endevor based on the status. Additionally, you can apply a package ID filter to reduce the number of displayed packages and save more mainframe resources.
+
+1. Right-click the filter icon at the top of the list in the **Endevor Element** view and select the **Change Filter** option.
+
+2. Select a status you want to filter.
+
+   **Note:** If all statuses are selected, no packages are filtered out.
+
+3. (Optional) Specify a package ID to fetch packages that match the ID only and press **Enter**. Alternatively, click on the plus button in the top right corner of the dialog to fetch packages that match the status filer only.
+
+You successfully applied filters to the fetched packages.
+
+</details>
+
+<details id="castPackage">
+<summary><span style="font-size: 1.2em">Cast Package</span></summary>
+
+Use the **Cast** option against a package to prepare the package for review and subsequent execution.
+
+1. Right-click the package you want to cast and select the **Cast Package** option.
+
+2. (Optional) Select the following **Cast** options:
+
+   - **Backout Enabled**: Indicates whether the backout facility is available for the selected package.
+   - **Components Validation** (radio group):
+     - **Validate**: Enables component validation. If component validation fails, the cast fails, as well.
+     - **Do not validate**: Disables component validation for the package.
+     - **(Default) Validate with warnings**: Enables component validation and generates a warning if component validation fails.
+
+You successfully cast the package. You should see a notification pop-up with the **Show Execution Report** and **Cancel** options and the following message:
+
+```text
+Cast package ... using configuration ... was successful. Would you like to see the report?
+```
+
+If the cast of the package fails, the execution report is displayed automatically.
+
+</details>
+
+<details id="restPackage">
+<summary><span style="font-size: 1.2em">Reset Package</span></summary>
+
+Use the **Reset** option against a package if you want to set status back to **In-edit**, which enables you to modify the package. You can use the **Reset** option against any package status type.
+
+1. Right-click a package.
+2. Select the **Reset Package** option.
+
+You successfully performed the **Reset Package** action.
+
+</details>
+
+<details id="showSCL">
+<summary><span style="font-size: 1.2em">Show Package SCL</span></summary>
+
+You can review SCL of your existing packages, using the **Show SCL** option.
+
+1. Navigate to the **Endevor Packages** view.
+
+2. Right-click the package whose SCL you want to review and select the **Show SCL** option.
+
+   The package SCL in shown in the editor area.
+
+You successfully displayed the package SCL.
+
+![Show Package SCL](images/E4E-show-scl.gif?raw=true 'Show Package SCL')
+
+</details>
+
+<details id="createGENPKGID">
+<summary><span style="font-size: 1.2em">Create Package Name Using GENPKGID Option</span></summary>
+
+You can use the **GENPKGID** option to generate a unique package ID while creating a new package.
+
+**Note:** Ensure that the `GENPKGID` exit is configured on Endevor.
+
+1. Select an element or an array of elements by holding the **Ctrl/Command** key and using the left mouse button.
+2. Right-click the selected element(s) and select the **Create/Update Package** option.
+3. From the drop-down menu, select the **GENPKGID** option.
+4. Enter a description for the package.
+5. Select options for the package.
+6. (Optional) Enter a CCID.
+7. (Optional) Enter a comment.
+8. Select **Move** command options for the package.
+
+You successfully created a new package with an assigned package ID.
+
+</details>
+</details>
+
+<details id="parent">
+<summary id="integrate"><span style="font-size: 1.5em"><b>Integrating</b></span><hr></summary>
+
+You can use the functionalities of Zowe-based features like base profiles, team configuration profiles (team config), and API Mediation Layer (API ML), and of the COBOL Language Support extension to enhance your overall experience with Explorer for Endevor.
+
+<details>
+<summary id="compat"><span style="font-size: 1.2em">Use Base Profiles</span></summary>
+
+Explorer for Endevor enables you to use Zowe CLI base profiles. To make your default base profile work in the extension, ensure that you specify such parameters as username, password, host, port, and `rejectUnauthorized` in the base profile. For more information about how base profiles work, see [the Base Profile](https://docs.zowe.org/stable/user-guide/cli-using-using-profiles-v1/#base-profiles) section on Zowe Docs.
+
+<details>
+<summary id="compat"><span style="font-size: 1.2em">Configure Token Authentication and PassTickets</span></summary>
+
+The Explorer for Endevor Token Authentication feature attempts to use temporary tokens (PassTickets) that are generated by the Endevor Authentication to sign on to the Endevor Web Services. The feature is enabled by default. You can disable the feature, using the **Use Token Authentication** option in the extension settings.
+
+**Note:** If the token support is not configured on the Endevor Web Services or the **Use Token Authentication** setting is disabled, a basic authentication with username and password is used instead.
+
+For more information on PassTickets, check the [Multi-Factor Authentication (MFA)](https://techdocs.broadcom.com/us/en/ca-mainframe-software/devops/ca-endevor-software-change-manager/19-0/securing/multi-factor-authentication-mfa.html) in the Endevor documentation.
+
+</details>
+
+<details>
+<summary id="compat"><span style="font-size: 1.1em"><b>Access Zowe API Mediation Layer</b></span><hr></summary>
 
 The extension enables you to connect to Endevor Web Services that are integrated with the Zowe API Mediation Layer, using your existing base profile. Ensure that you log in to the Zowe API Mediation layer authentication service, using your credentials and edit your current Endevor location to include the API ML endpoint for Endevor Web Services.
 
@@ -784,115 +898,46 @@ If your API ML profile token is expired, the extension navigates you to re-authe
 
 You successfully re-authenticated your token.
 
-## Team Configuration File
+</details>
+
+</details>
+
+<details>
+<summary id="compat"><span style="font-size: 1.2em">Leverage Team Config Functionality</span></summary>
 
 Explorer for Endevor supports reading a global team configuration (team config) file. A team configuration file enables you to manage your Endevor connection details efficiently in one location. You can use global team configs with your team members to share access to Endevor inventory locations. For more information about team config, see [Using Team Profiles](https://docs.zowe.org/stable/user-guide/cli-using-using-team-profiles) on Zowe Docs. The extension reads team configuration files only if the profile sync setting is enabled. To configure the setting, navigate to > **Settings** > **Extensions** > **Explorer for Endevor** > **Profiles: Keep in sync**.
 
 As an application developer, you can obtain a shared global configuration file from your system administrator and use the file to access shared systems. As a system administrator, you need to have [Zowe CLI 7.2.1](https://docs.zowe.org/stable/user-guide/cli-installcli) or higher on your workstation before you create a team configuration file.
 
-> **Tip**: You can convert your existing Zowe CLI profiles into team configuration files with the `zowe config convert-profiles` command. For more information about team config conversion, see [Using Profiles](https://docs.zowe.org/stable/user-guide/cli-using-using-profiles/#important-information-about-team-profiles) on Zowe Docs.
+> **Tip**: You can convert your existing Zowe CLI profiles into team configuration files with the `zowe config convert-profiles` command. For more information about team config conversion, see step 3 in the procedure in [Updating Zowe CLI and Zowe CLI plug-ins](https://docs.zowe.org/stable/user-guide/cli-updatingcli/#updating-from-an-npm-online-registry) on Zowe Docs.
 
-## Reports View
+</details>
 
-The extension enables you to monitor activity of the session in the Explorer for Endevor tab that you can access using the View tab. The Reports View feature helps you troubleshoot any errors that occur in the extension more efficiently.
+<details>
+<summary id="compat"><span style="font-size: 1.2em">Integrate with COBOL Language Support</span></summary>
 
-Use Reports View to keep track of events that happen during an active session of the extension and review execution errors or API notification messages.
+You can integrate Explorer for Endevor with COBOL Language Support that enables you to use the following functionality:
 
-1. Navigate to the **View** tab in VS Code.
+- Load your data sets containing COBOL code directly from the data set tree.
+- Load your COBOL code directly from Endevor elements.
+- Enable automatic copybook retrieval from the mainframe.
 
-2. Click **Command Palette...**.
+For more information, see [COBOL Language Support](https://marketplace.visualstudio.com/items?itemName=broadcomMFD.cobol-language-support) on VSC Marketplace.
 
-   The command prompt is displayed.
+</details>
 
-3. Type **Explorer for Endevor: Focus on Endevor Reports View** and press Enter.
+<details>
+<summary id="compat"><span style="font-size: 1.2em">Zowe Conformance Program</span></summary>
 
-The Report View is displayed.
+<a href="https://www.openmainframeproject.org/all-projects/zowe/conformance"><img src="images/zowe-v3-conformant-badge.png" alt="Zowe Explorer V3 Conformance Badge" width="200" height="160"/></a>
 
-You can now click on events to expand them and access execution or API error reports.
+Explorer for Endevor is Zowe Explorer V3 Conformant. The Zowe Conformance Program ensures a high level of common functionality, interoperability, and user experience while using an extension that leverages Zowe. For more information, see [Zowe Conformance Program](https://www.openmainframeproject.org/all-projects/zowe/conformance).
 
-To see a list of Endevor messages and codes that were reported, hover over records of the warning or error messages.
+</details>
+</details>
 
-## Packages View
-
-The extension enables you to see the Endevor packages in a specified Endevor instance, to filter the packages and perform package-related actions.
-
-You can perform the following actions to change the way packages are displayed and the order in which they are displayed:
-
-- **Show Packages Created by User**: Click on the **Show Packages Created by User** icon in the **Endevor Packages** view toolbar to show only packages created by currently logged in user.
-
-- **Descending/Ascending Order by Package ID**: Click on the **Descending/Ascending Order by Package ID** icon to toggle the order in which packages are shown.
-
-- **Change Instance**: Click on the **Change Instance** icon to change the Endevor instance whose packages are displayed.
-
-- **Refresh Endevor Packages**: Click on the **Refresh Endevor Packages** icon to retrieve packages information from Endevor, using the current Endevor instance and filter.
-
-## Manage the Extension Tree
-
-You can perform the following actions to manage your connections and inventory locations in the extension tree:
-
-- **Delete a connection**: Delete your connection permanently by right-clicking a connection node and selecting the **Delete a connection** option.
-
-- **Delete an inventory location**: Delete your inventory location permanently by right-clicking an inventory location node and selecting the **Delete an inventory location** option.
-
-- **Hide a connection**: If you do not want to list your connections in the **Endevor Elements** view, you can hide such connections. To hide a connection, right-click the connection node and select the **Hide a connection** option.
-
-- **Hide an inventory location**: If you do not want to list your inventory locations in the **Endevor Elements** view, you can hide such locations. To hide an inventory location, right-click the location node and select the **Hide an inventory location** option.
-
-- **Edit an Endevor Connection**: Edit your Endevor connection login details by right-clicking a connection node and selecting the **Edit an Endevor Connection** option.
-
-  **Note:** The **Hide a connection** or **Hide an inventory location** actions do not permanently delete the information from the extension.
-
-## Configure Explorer for Endevor
-
-You can configure the following settings of the extension:
-
-- The number of parallel HTTP requests supported by Endevor.
-
-- Automatic Signout. The signout function locks elements for you. If the option is enabled, retrieved or edited elements are signed out to you. If an element is signed out to somebody else, a notification asking whether to override the signout pops up. If the option is disabled, the extension retrieves or edits an element without signout.
-
-- Telemetry level. You can disable or configure data that is collected by Telemetry in the VS Code Settings. Navigate to **Settings** > **Application** > **Telemetry** > **Telemetry Level** to do so. For more information, see [Disable Telemetry](https://code.visualstudio.com/docs/getstarted/telemetry#_disable-telemetry-reporting) in the VS Code documentation.
-
-  **Note:** This setting applies not only to Explorer for Endevor but to all extensions in your VS Code.
-
-- Profiles: Keep in Sync. The option enables you to use a team configuration file that stores your pre-saved Endevor configuration or Zowe CLI Endevor profiles with Endevor locations in the extension. By default, the setting is enabled, meaning that the extension reads your team configuration files on startup and displays profile information in the **Endevor Elements** view. If the option is disabled, the extension does not check the `.zowe` folder for available profiles.
-
-  **Notes**:
-
-  - You can use Endevor connections and inventory locations that are created in Explorer for Endevor in the extension only.
-
-- File extension resolution. The option enables you to choose between the following methods of file extension resolution for the locally saved elements.
-
-  - 'Element name only' method uses the element name to determine the file extension.
-
-  - 'Endevor type file extension only' method uses the Endevor defined file extension for the type.
-
-  - (Default) 'Endevor type file extension or type name' method uses the Endevor defined file extension for the type. The method also uses the Endevor type name as a fall-back option.
-
-- (Experimental) Workspace Synchronization. The option enables the Endevor Workspace initialization that lets you create a synchronized Endevor workspace locally.
-
-  **Note:** Experimental features might include undiscovered errors. Please, use this feature at your own discretion.
-
-- Ask for Processor Group. The option enables selection of a processor group when you perform Generate, Add, or Upload actions. A selected processor group overrides the previously chosen processor group.
-
-- Generate Subsystem. The option enables the extension to add the Generate all Elements feature. The option is disabled by default. Once enabled, the feature appears in the **Endevor Elements** view. You can then perform the Generate all Elements action against a susbystem node.
-
-- The editor auto save setting is disabled by default.
-
-  **Note**: Using the auto save feature with Explorer for Endevor might result in a bad user experience.
-
-  To change the setting, navigate to the VS Code Settings and look for **Files: Auto Save**.
-
-- Endevor: Allow Element Delete. The option enables the Delete feature and makes the feature available to you in the **Endevor Elements** view. The options is disabled by default.
-
-- Endevor: Ask for CCID/Comment. The option enables prompting for CCID/Comment.
-
-- Endevor: Element List Limit. The option enables you to set a maximum number of elements that are filtered in the **Endevor Elements** view when you use the **Element Text** filter. This option improves the speed of Element text-based filtering and saves your mainframe resources. The default number of searched elements is 10000. To enable the unlimited filtering, set the value to 0.
-
-  **Note**: Setting the limit value to 0 decreases the filtering speed by consuming more mainframe resources.
-
-Access the Explorer for Endevor settings by clicking **Settings** > **Extensions** > **Explorer for Endevor**.
-
-## List of Limitations
+<details>
+<summary id="compat"><span style="font-size: 1.5em"><b>Review Extension Limitations</b></span><hr></summary>
 
 This section lists notable limitations in the current version of Explorer for Endevor.
 
@@ -901,30 +946,10 @@ This section lists notable limitations in the current version of Explorer for En
   You can search using the instance, environment, stageNumber, system, subsystem, and type parameters.
 
 - Only the UTF-8 character encoding is currently supported.
+</details>
 
-## Contribute to Explorer for Endevor
-
-We encourage you to share ideas to help improve Explorer for Endevor. You can also report issues in the extension, using the following link.
-
-> [Share an idea or open an issue in our Git repository](https://github.com/BroadcomMFD/explorer-for-endevor/issues)
-
-## COBOL Language Support
-
-You can integrate Explorer for Endevor with COBOL Language Support that enables you to use the following functionality:
-
-- Load your data sets containing COBOL code directly from the data set tree.
-- Load your COBOL code directly from Endevor elements.
-- Enable automatic copybook retrieval from the mainframe.
-
-For more information, see [COBOL LSP](https://marketplace.visualstudio.com/items?itemName=broadcomMFD.cobol-language-support) on VSC Marketpalce.
-
-## Zowe Conformance Program
-
-<a href="https://www.openmainframeproject.org/all-projects/zowe/conformance"><img src="images/zowe-v3-conformant-badge.png" alt="Zowe Explorer V3 Conformance Badge" width="200" height="160"/></a>
-
-Explorer for Endevor is Zowe Explorer V3 Conformant. The Zowe Conformance Program ensures a high level of common functionality, interoperability, and user experience while using an extension that leverages Zowe. For more information, see [Zowe Conformance Program](https://www.openmainframeproject.org/all-projects/zowe/conformance).
-
-## Privacy Notice
+<details>
+<summary id="compat"><span style="font-size: 1.5em"><b>Privacy Notice</b></span><hr></summary>
 
 The extensions for Visual Studio Code developed by Broadcom Inc., including its corporate affiliates and subsidiaries, ("Broadcom") are provided free of charge, but in order to better understand and meet its users’ needs, Broadcom may collect, use, analyze and retain anonymous users’ metadata and interaction data, (collectively, “Usage Data”) and aggregate such Usage Data with similar Usage Data of other Broadcom customers. Please find more detailed information in [License and Service Terms & Repository](https://www.broadcom.com/company/legal/licensing).
 
@@ -932,14 +957,17 @@ This data collection uses built-in Microsoft VS Code Telemetry, which can be dis
 
 The current release of Explorer for Endevor collects anonymous data for the following events:
 
-- Extension commands, such as Add, Retrieve, Sign in, Sign out, Edit, Generate, etc.
-- Build the **Endevor Elements** view, refresh the view
-- Filter elements
+- Element actions, such as Add, Retrieve, Sign in, Sign out, Edit, Generate, Move, Delete, etc.
+- Build the **Endevor Elements** view, refresh the view, filtering
+- Build the **Endevor Element History** view
+- Build the **Endevor Packages** view, refresh the view, filtering
+- Package actions, such as Create, Show SCL, Cast, etc.
+- Build the **Endevor Reports** view
 - Internal and Endevor errors
 
-**Note**: Any sensitive information is filtered, so the extension gets only anonymous error messages and Endevor REST API error codes. The Endevor REST API error codes are collected for the purposes of determining errors in the extension lifecycle.
+**Note:** Any sensitive information is filtered, so the extension gets only anonymous error messages and Endevor REST API error codes. The Endevor REST API error codes are collected for the purposes of determining errors in the extension lifecycle.
 
-Each such event is logged with the following information:
+Each event is logged with the following records:
 
 - Event time
 - Operating system and version
@@ -947,7 +975,10 @@ Each such event is logged with the following information:
 - Anonymous user and session ID
 - Version numbers of Microsoft VS Code and Explorer for Endevor
 
-## Technical Assistance and Support for Explorer for Endevor
+</details>
+
+<details>
+<summary id="compat"><span style="font-size: 1.5em"><b>Technical Assistance and Support</b></span><hr></summary>
 
 The Explorer for Endevor extension is made available to customers on the Visual Studio Code Marketplace in accordance with the terms and conditions contained in the provided End-User License Agreement (EULA).
 
@@ -963,8 +994,8 @@ This support generally includes:
 
 Technical support cases must be submitted to Broadcom in accordance with guidance provided in “Working with Support”.
 
-Note: To receive technical assistance and support, you must remain compliant with “Working with Support”, be current on all applicable licensing and maintenance requirements, and maintain an environment in which all computer hardware, operating systems, and third party software associated with the affected Broadcom software are on the releases and version levels from the manufacturer that Broadcom designates as compatible with the software. Changes you elect to make to your operating environment could detrimentally affect the performance of Broadcom software and Broadcom shall not be responsible for these effects or any resulting degradation in performance of the Broadcom software. Severity 1 cases must be opened via telephone and elevations of lower severity incidents to Severity 1 status must be requested via telephone.
+**Note:** To receive technical assistance and support, you must remain compliant with “Working with Support”, be current on all applicable licensing and maintenance requirements, and maintain an environment in which all computer hardware, operating systems, and third party software associated with the affected Broadcom software are on the releases and version levels from the manufacturer that Broadcom designates as compatible with the software. Changes you elect to make to your operating environment could detrimentally affect the performance of Broadcom software and Broadcom shall not be responsible for these effects or any resulting degradation in performance of the Broadcom software. Severity 1 cases must be opened via telephone and elevations of lower severity incidents to Severity 1 status must be requested via telephone.
 
----
+</details>
 
 Copyright © 2025 Broadcom. The term "Broadcom" refers to Broadcom Inc. and/or its subsidiaries.

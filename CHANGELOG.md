@@ -2,6 +2,40 @@
 
 You can find all notable changes to Explorer for Endevor in this document.
 
+## [1.11.1] &ndash; 2025-06-16
+
+### Fixed
+
+- Fixed an issue that caused Generate element to fail when "Do not override" processor group option was chosen.
+
+## [1.11.0] &ndash; 2025-06-04
+
+### Added
+
+- All the connections that use deprecated Web Services v1 API base paths are marked with a warning icon in the **Endevor Elements** View.
+
+### Changed
+
+- Improved element editing experience including: ability to keep element open after saving, setting the CCID/Comment, Generate After Upload feature via the status bar, reduced user prompts and better compatibility with the File: Auto Save setting. If Files: Auto Save is enabled, your changes will be automatically saved in the session but will not be automatically synchronized with Endevor. To synchronize the changes, ensure that you manually save the changes by pressing Ctrl+S (Command+S on Mac).
+- Changed the logic of location specification while uploading the element changes. Now no location is required to be provided and element will be uploaded to the same location where it was retrieved from.
+- Changed the logic of the Generate with copyback feature. Now elements are copied back to the location that is assigned to the map versus prompting you to specify the location.
+- Changed the logic of the Add Element feature. Now the location prompt aligns with the File Extension Resolution setting when suggesting a file extension to apply to the new element.
+- Now connections and locations in the **Endevor Elements** view are marked with error icon versus warning icon when problems with establishing the connection or authorization issues are detected.
+- Eliminate unnecessary elements fetching when the Clear All Filters command is used.
+- Removed broken Getting Started Walkthrough item from the commands list. Use the Open Walkthrough command to access the extension walkthroughs.
+
+### Fixed
+
+- Fixed an issue that prevented users from seeing invalid statuses of the inventory locations and properly updating the connection details or credentials for them.
+- Fixed an issue that prevented users from fetching dependencies for COBOL Language Support.
+
+## [1.10.1] &ndash; 2025-04-29
+
+### Fixed
+
+- Fixed an issue that prevented users from casting packages without selecting component validation.
+- Fixed issues with fetching dependencies for COBOL Language Support.
+
 ## [1.10.0] &ndash; 2025-02-21
 
 ### Added

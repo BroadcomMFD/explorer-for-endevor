@@ -22,7 +22,7 @@ EXPRESSLY ADVISED OF SUCH LOSS OR DAMAGE.
 ---
 
 Broadcom Internal
-(@broadcom/endevor-for-zowe-cli 7.7.6)
+(@broadcom/endevor-for-zowe-cli 7.9.0)
 
 Copyright (c) 2019 Broadcom.  All Rights Reserved.  The term
 "Broadcom" refers to Broadcom Inc. and/or its subsidiaries.
@@ -456,7 +456,7 @@ SOFTWARE.
 ---
 
 MIT
-(@vscode/extension-telemetry 0.9.8)
+(@vscode/extension-telemetry 1.0.0)
 
 vscode-extension-telemetry
 
@@ -485,7 +485,7 @@ SOFTWARE.
 ---
 
 EPL-2.0
-(@zowe/imperative 5.27.7)
+(@zowe/imperative 5.27.8)
 
 Eclipse Public License - v 2.0
 
@@ -796,7 +796,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ---
 
 MIT
-(ajv 8.12.0)
+(ajv 8.17.1)
 
 The MIT License (MIT)
 
@@ -1807,7 +1807,7 @@ THE SOFTWARE.
 ---
 
 MIT
-(fp-ts 2.16.9)
+(fp-ts 2.16.10)
 
 MIT License
 
@@ -3800,7 +3800,7 @@ OTHER DEALINGS IN THE SOFTWARE.
 ---
 
 MIT
-(undici 5.28.5)
+(undici 5.29.0)
 
 MIT License
 

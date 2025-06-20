@@ -2,7 +2,7 @@
 
 This project leverages the following third party content.
 
-@broadcom/endevor-for-zowe-cli (7.7.6)
+@broadcom/endevor-for-zowe-cli (7.9.0)
 
 - License: Broadcom Internal
 - Project: https://www.npmjs.com/package/@broadcom/endevor-for-zowe-cli
@@ -82,12 +82,12 @@ This project leverages the following third party content.
 - License: MIT
 - Project: https://www.npmjs.com/package/@nodelib/fs.walk
 
-@vscode/extension-telemetry (0.9.8)
+@vscode/extension-telemetry (1.0.0)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/@vscode/extension-telemetry
 
-@zowe/imperative (5.27.7)
+@zowe/imperative (5.27.8)
 
 - License: EPL-2.0
 - Project: https://www.npmjs.com/package/@zowe/imperative
@@ -97,7 +97,7 @@ agent-base (7.1.3)
 - License: MIT
 - Project: https://www.npmjs.com/package/agent-base
 
-ajv (8.12.0)
+ajv (8.17.1)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/ajv
@@ -287,7 +287,7 @@ form-data (2.5.1)
 - License: MIT
 - Project: https://www.npmjs.com/package/form-data
 
-fp-ts (2.16.9)
+fp-ts (2.16.10)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/fp-ts
@@ -647,7 +647,7 @@ underscore (1.13.6)
 - License: MIT
 - Project: https://www.npmjs.com/package/underscore
 
-undici (5.28.5)
+undici (5.29.0)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/undici
