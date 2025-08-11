@@ -2,6 +2,24 @@
 
 You can find all notable changes to Explorer for Endevor in this document.
 
+## [1.11.2] &ndash; 2025-07-31
+
+### Added
+
+- Added the **Ask For Element Target Location** setting that enables you to specify whether you want to generate or edit an element with copyback to a target location.
+- Added a special warning message when there are no elements found in place in the specified location with an opportunity to enable first found up the map search instead.
+
+### Changed
+
+- An element target location prompt was reintroduced at the beginning of the **Generate with Copyback** or **Edit** element actions. You can disable this capability with a new **Ask For Element Target Location** setting.
+
+### Fixed
+
+- Fixed an issue that caused elements to be copied back to the wrong stage while editing up the map element.
+- Fixed an issue with the **Resolve Out-of-sync** action that did not mark elements as synchronized even if the synchronization issue was resolved.
+- Fixed multiple issues with the conflict resolution process while editing elements.
+- Adjusted **Create/Update Package** action options dialogs to correctly reflect option selection.
+
 ## [1.11.1] &ndash; 2025-06-16
 
 ### Fixed

@@ -2,11 +2,12 @@
 
 <div id="header" align="center">
 
-[![Version](https://img.shields.io/badge/version-1.11.1-brightgreen)](https://marketplace.visualstudio.com/items/broadcomMFD.explorer-for-endevor/changelog)
+[![Version](https://img.shields.io/badge/version-1.11.2-brightgreen)](https://marketplace.visualstudio.com/items/broadcomMFD.explorer-for-endevor/changelog)
 [![Installs](https://img.shields.io/badge/installs-17k+-blue)](https://marketplace.visualstudio.com/items/broadcomMFD.explorer-for-endevor)
 [![GitHub issues](https://img.shields.io/github/issues/BroadcomMFD/explorer-for-endevor)](https://github.com/BroadcomMFD/explorer-for-endevor/issues)
-[![Slack](https://img.shields.io/badge/chat-on%20Slack-purple)](https://che4z.slack.com/archives/CQNJDQFFX)
+[![Slack](https://img.shields.io/badge/chat-on%20Slack-purple)](https://che4z.slack.com/join/shared_invite/zt-37ewynplx-wCoabaIDxN6Ofm4_XBinZA#/shared-invite/email)
 [![Support](https://img.shields.io/badge/Broadcom-support-red)](https://www.broadcom.com/support)
+[![Code4z](https://img.shields.io/badge/Code4z-marketplace-cc092f)](https://marketplace.visualstudio.com/search?term=code4z&target=VSCode)
 
 </div>
 
@@ -25,7 +26,9 @@ The Explorer for Endevor VS Code extension modernizes the way you interact with 
 
 The extension streamlines the way you access and edit your Endevor-based source code, saving your mainframe resources. You can navigate your Endevor environments, work with packages, print listings, access reports and more from the convenience of a lightweight IDE.
 
-Explorer for Endevor is a part of [Code4z](https://techdocs.broadcom.com/code4z), an all-round VS Code extension package that offers a modern experience for mainframe application developers, including tools for language support, data editing, testing, and source code management. For an interactive overview of Code4z, see the [Code4z Developer Cockpit](https://mainframe.broadcom.com/code4z-developer-cockpit).
+<img align="left" alt="This extension is part of the Code4z experience" width="80" height="82" src="https://raw.githubusercontent.com/BroadcomMFD/code4z/refs/heads/main/icon5.png" />
+
+Explorer for Endevor is part of the [Code4z](https://techdocs.broadcom.com/code4z) experience from Broadcom, which offers a modern experience for mainframe application developers. To get started with Code4z, check out our foundational [extension pack](https://marketplace.visualstudio.com/items?itemName=broadcomMFD.code4z-extension-pack).
 
 We encourage you to share ideas to help improve Explorer for Endevor. You can also report issues in the extension, using the following link.
 
@@ -36,9 +39,9 @@ We encourage you to share ideas to help improve Explorer for Endevor. You can al
 
 - REST API v1 `EndevorService/api/v1` and `EndevorService/rest` will no longer be supported in **Explorer for Endevor 2.0.0** (release plan - End of 2025). Ensure that you use REST API v2 `EndevorService/api/v2` in `basePath` in your Endevor connections to avoid business disruptions.
 
-- **Mainframe Technical Exchanges**: June and October 2025
+- **Mainframe Technical Exchange**: October 2025
 
-  Join us for the Mainframe Technical Exchanges virtually (June 24-26) and in Plano, Texas (October 15-17). Connect with Mainframe Experts who will share the latest technical education and product demos and respond to your questions and feedback. These educational events are a great way to network with peers and experts from across the globe.
+  Join us for the Mainframe Technical Exchange in Plano, Texas (October 15-17). Connect with Mainframe Experts who will share the latest technical education and product demos and respond to your questions and feedback. This educational event is a great way to network with peers and experts from across the globe.
 
   Bookmark this page, [Join Us for the Mainframe Technical Exchanges](https://engage.broadcom.com/mainframe_beyond_code_mainframe_technical_exchange), for current registration and event information.
   </details>
@@ -48,13 +51,13 @@ We encourage you to share ideas to help improve Explorer for Endevor. You can al
 
 Ensure that you meet the following prerequisites before you use Explorer for Endevor:
 
-**Client-side Software Requirements**:
+**Client**:
 
 - Access to Endevor.
 - Visual Studio Code version 1.82 or higher.
 - (Optional) For the text search feature to work, ensure that you use Endevor REST API v2 with basepath `EndevorService/api/v2`.
 
-**Host-side Software Requirements**:
+**Server**:
 
 - Endevor 18.0.12 or higher:
 
@@ -202,6 +205,8 @@ You can configure the following settings of the extension:
   **Note:** Setting the limit value to 0 decreases the filtering speed by consuming more mainframe resources.
 
 - Endevor: Close on Upload. If true, when an edited element is uploaded to Endevor, the edit session will be automatically closed.
+
+- Endevor: Ask For Element Target Location. If enabled, you can select the Element target location when performing the **Generate with Copyback** or **Edit** actions".
 
 Access the Explorer for Endevor settings by clicking **Settings** > **Extensions** > **Explorer for Endevor**.
 

@@ -137,6 +137,11 @@ braces (3.0.3)
 - License: MIT
 - Project: https://www.npmjs.com/package/braces
 
+call-bind-apply-helpers (1.0.2)
+
+- License: MIT
+- Project: https://www.npmjs.com/package/call-bind-apply-helpers
+
 chalk (4.1.2)
 
 - License: MIT
@@ -227,6 +232,11 @@ diff2html (3.4.20-usewontache.1.60e7a2e)
 - License: MIT
 - Project: https://www.npmjs.com/package/diff2html
 
+dunder-proto (1.0.1)
+
+- License: MIT
+- Project: https://www.npmjs.com/package/dunder-proto
+
 emoji-regex (8.0.0)
 
 - License: MIT
@@ -236,6 +246,26 @@ entities (4.5.0)
 
 - License: BSD-2-Clause
 - Project: https://www.npmjs.com/package/entities
+
+es-define-property (1.0.1)
+
+- License: MIT
+- Project: https://www.npmjs.com/package/es-define-property
+
+es-errors (1.3.0)
+
+- License: MIT
+- Project: https://www.npmjs.com/package/es-errors
+
+es-object-atoms (1.1.1)
+
+- License: MIT
+- Project: https://www.npmjs.com/package/es-object-atoms
+
+es-set-tostringtag (2.1.0)
+
+- License: MIT
+- Project: https://www.npmjs.com/package/es-set-tostringtag
 
 escalade (3.2.0)
 
@@ -282,7 +312,7 @@ flatted (3.3.1)
 - License: ISC
 - Project: https://www.npmjs.com/package/flatted
 
-form-data (2.5.1)
+form-data (2.5.5)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/form-data
@@ -297,15 +327,35 @@ fs-extra (8.1.0)
 - License: MIT
 - Project: https://www.npmjs.com/package/fs-extra
 
+function-bind (1.1.2)
+
+- License: MIT
+- Project: https://www.npmjs.com/package/function-bind
+
 get-caller-file (2.0.5)
 
 - License: ISC
 - Project: https://www.npmjs.com/package/get-caller-file
 
+get-intrinsic (1.3.0)
+
+- License: MIT
+- Project: https://www.npmjs.com/package/get-intrinsic
+
+get-proto (1.0.1)
+
+- License: MIT
+- Project: https://www.npmjs.com/package/get-proto
+
 glob-parent (5.1.2)
 
 - License: ISC
 - Project: https://www.npmjs.com/package/glob-parent
+
+gopd (1.2.0)
+
+- License: MIT
+- Project: https://www.npmjs.com/package/gopd
 
 graceful-fs (4.2.11)
 
@@ -321,6 +371,21 @@ has-own-prop (2.0.0)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/has-own-prop
+
+has-symbols (1.1.0)
+
+- License: MIT
+- Project: https://www.npmjs.com/package/has-symbols
+
+has-tostringtag (1.0.2)
+
+- License: MIT
+- Project: https://www.npmjs.com/package/has-tostringtag
+
+hasown (2.0.2)
+
+- License: MIT
+- Project: https://www.npmjs.com/package/hasown
 
 http-proxy-agent (7.0.2)
 
@@ -426,6 +491,11 @@ markdown-it (14.1.0)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/markdown-it
+
+math-intrinsics (1.1.0)
+
+- License: MIT
+- Project: https://www.npmjs.com/package/math-intrinsics
 
 mdurl (2.0.0)
 
@@ -576,6 +646,11 @@ run-parallel (1.2.0)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/run-parallel
+
+safe-buffer (5.2.1)
+
+- License: MIT
+- Project: https://www.npmjs.com/package/safe-buffer
 
 semver (7.5.4)
 
