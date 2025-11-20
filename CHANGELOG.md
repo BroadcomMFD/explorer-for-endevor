@@ -2,6 +2,14 @@
 
 You can find all notable changes to Explorer for Endevor in this document.
 
+## [1.11.3] &ndash; 2025-11-19
+
+### Fixed
+
+- Fixed an issue that prevented users from fetching dependencies for COBOL Language Support.
+- Fixed an issue that caused the failed element upload when inventory locations used wildcards to specify the environment.
+- Fixed an issue that prevented the CCID and Comment update dialog from appearing regardless of the enabled **Ask For Ccid Comment** setting.
+
 ## [1.11.2] &ndash; 2025-07-31
 
 ### Added

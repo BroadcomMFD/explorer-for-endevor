@@ -2,8 +2,8 @@
 
 <div id="header" align="center">
 
-[![Version](https://img.shields.io/badge/version-1.11.2-brightgreen)](https://marketplace.visualstudio.com/items/broadcomMFD.explorer-for-endevor/changelog)
-[![Installs](https://img.shields.io/badge/installs-17k+-blue)](https://marketplace.visualstudio.com/items/broadcomMFD.explorer-for-endevor)
+[![Version](https://img.shields.io/badge/version-1.11.3-brightgreen)](https://marketplace.visualstudio.com/items/broadcomMFD.explorer-for-endevor/changelog)
+[![Installs](https://img.shields.io/badge/installs-19k+-blue)](https://marketplace.visualstudio.com/items/broadcomMFD.explorer-for-endevor)
 [![GitHub issues](https://img.shields.io/github/issues/BroadcomMFD/explorer-for-endevor)](https://github.com/BroadcomMFD/explorer-for-endevor/issues)
 [![Slack](https://img.shields.io/badge/chat-on%20Slack-purple)](https://che4z.slack.com/join/shared_invite/zt-37ewynplx-wCoabaIDxN6Ofm4_XBinZA#/shared-invite/email)
 [![Support](https://img.shields.io/badge/Broadcom-support-red)](https://www.broadcom.com/support)
@@ -30,7 +30,7 @@ The extension streamlines the way you access and edit your Endevor-based source 
 
 Explorer for Endevor is part of the [Code4z](https://techdocs.broadcom.com/code4z) experience from Broadcom, which offers a modern experience for mainframe application developers. To get started with Code4z, check out our foundational [extension pack](https://marketplace.visualstudio.com/items?itemName=broadcomMFD.code4z-extension-pack).
 
-We encourage you to share ideas to help improve Explorer for Endevor. You can also report issues in the extension, using the following link.
+We encourage you to share ideas to help improve Explorer for Endevor. You can also report extension issues, using the following link.
 
 > [Share an idea or open an issue in our Git repository](https://github.com/BroadcomMFD/explorer-for-endevor/issues)
 
@@ -39,15 +39,10 @@ We encourage you to share ideas to help improve Explorer for Endevor. You can al
 
 - REST API v1 `EndevorService/api/v1` and `EndevorService/rest` will no longer be supported in **Explorer for Endevor 2.0.0** (release plan - End of 2025). Ensure that you use REST API v2 `EndevorService/api/v2` in `basePath` in your Endevor connections to avoid business disruptions.
 
-- **Mainframe Technical Exchange**: October 2025
-
-  Join us for the Mainframe Technical Exchange in Plano, Texas (October 15-17). Connect with Mainframe Experts who will share the latest technical education and product demos and respond to your questions and feedback. This educational event is a great way to network with peers and experts from across the globe.
-
-  Bookmark this page, [Join Us for the Mainframe Technical Exchanges](https://engage.broadcom.com/mainframe_beyond_code_mainframe_technical_exchange), for current registration and event information.
-  </details>
+</details>
 
 <details>
-<summary id="compat"><span style="font-size: 1.5em"f><b>Address Software Requirements</b></span><hr></summary>
+<summary id="softwareRequirements"><span style="font-size: 1.5em"f><b>Address Software Requirements</b></span><hr></summary>
 
 Ensure that you meet the following prerequisites before you use Explorer for Endevor:
 
@@ -84,7 +79,7 @@ Ensure that you meet the following prerequisites before you use Explorer for End
 </details>
 
 <details>
-<summary id="compat"><span style="font-size: 1.5em"><b>Getting Started</b></span><hr></summary>
+<summary id="gettingStarted"><span style="font-size: 1.5em"><b>Getting Started</b></span><hr></summary>
 
 Create an Endevor connection and Endevor inventory location to get started with Explorer for Endevor. Alternatively, use your existing Zowe CLI Endevor profiles to get started.
 
@@ -595,7 +590,7 @@ The **Sign in** option enables you to unlock an element that earlier was signed 
 You successfully signed in the element.
 
 <details id="retrieveElements">
-<summary id="retrieve"><span style="font-size: 1.2em">Retrieve Elements into local Folder</span></summary>
+<summary><span style="font-size: 1.2em">Retrieve Elements into local Folder</span></summary>
 
 **Note:** the Endevor functionality such as Generate, Move, Print listings are not be available if the elements are retrieved from Endevor to a local folder. If you want to use the native Endevor-based options with your elements, use the [Edit an element](#edit) or experimental [Workspace Synchronization](#workspace-synchronization) features instead of the **Retrieve Elements** option.
 
@@ -648,7 +643,7 @@ To learn more about the Endevor Workspace synchronization feature, read [this ar
 </details>
 
 <details id="reports">
-<summary id="viewReports"><span style="font-size: 1.2em">View Reports</span></summary>
+<summary><span style="font-size: 1.2em">View Reports</span></summary>
 
 The extension enables you to monitor activity of the session in the Explorer for Endevor tab that you can access using the View tab. The Reports View feature helps you troubleshoot any errors that occur in the extension more efficiently.
 
@@ -671,8 +666,8 @@ To see a list of Endevor messages and codes that were reported, hover over recor
 </details>
 </details>
 
-<details id="extraFeatures">
-<summary id="extraFewatures"><span style="font-size: 1.5em"><b>Review Package Actions</b></span><hr></summary>
+<details id="packageActions">
+<summary><span style="font-size: 1.5em"><b>Review Package Actions</b></span><hr></summary>
 
 The extension enables you to see the Endevor packages in a specified Endevor instance, to filter the packages and perform package-related actions.
 
@@ -821,18 +816,20 @@ You successfully created a new package with an assigned package ID.
 </details>
 </details>
 
-<details id="parent">
+<details id="parentIntegrate">
 <summary id="integrate"><span style="font-size: 1.5em"><b>Integrating</b></span><hr></summary>
 
 You can use the functionalities of Zowe-based features like base profiles, team configuration profiles (team config), and API Mediation Layer (API ML), and of the COBOL Language Support extension to enhance your overall experience with Explorer for Endevor.
 
 <details>
-<summary id="compat"><span style="font-size: 1.2em">Use Base Profiles</span></summary>
+<summary id="baseProfile"><span style="font-size: 1.2em">Use Base Profiles</span></summary>
 
 Explorer for Endevor enables you to use Zowe CLI base profiles. To make your default base profile work in the extension, ensure that you specify such parameters as username, password, host, port, and `rejectUnauthorized` in the base profile. For more information about how base profiles work, see [the Base Profile](https://docs.zowe.org/stable/user-guide/cli-using-using-profiles-v1/#base-profiles) section on Zowe Docs.
 
+</details>
+
 <details>
-<summary id="compat"><span style="font-size: 1.2em">Configure Token Authentication and PassTickets</span></summary>
+<summary id="configToken"><span style="font-size: 1.2em">Configure Token Authentication and PassTickets</span></summary>
 
 The Explorer for Endevor Token Authentication feature attempts to use temporary tokens (PassTickets) that are generated by the Endevor Authentication to sign on to the Endevor Web Services. The feature is enabled by default. You can disable the feature, using the **Use Token Authentication** option in the extension settings.
 
@@ -843,7 +840,7 @@ For more information on PassTickets, check the [Multi-Factor Authentication (MFA
 </details>
 
 <details>
-<summary id="compat"><span style="font-size: 1.1em"><b>Access Zowe API Mediation Layer</b></span><hr></summary>
+<summary id="apiML"><span style="font-size: 1.2em">Access Zowe API Mediation Layer</span></summary>
 
 The extension enables you to connect to Endevor Web Services that are integrated with the Zowe API Mediation Layer, using your existing base profile. Ensure that you log in to the Zowe API Mediation layer authentication service, using your credentials and edit your current Endevor location to include the API ML endpoint for Endevor Web Services.
 
@@ -905,10 +902,8 @@ You successfully re-authenticated your token.
 
 </details>
 
-</details>
-
 <details>
-<summary id="compat"><span style="font-size: 1.2em">Leverage Team Config Functionality</span></summary>
+<summary id="teamConfig"><span style="font-size: 1.2em">Leverage Team Config Functionality</span></summary>
 
 Explorer for Endevor supports reading a global team configuration (team config) file. A team configuration file enables you to manage your Endevor connection details efficiently in one location. You can use global team configs with your team members to share access to Endevor inventory locations. For more information about team config, see [Using Team Profiles](https://docs.zowe.org/stable/user-guide/cli-using-using-team-profiles) on Zowe Docs. The extension reads team configuration files only if the profile sync setting is enabled. To configure the setting, navigate to > **Settings** > **Extensions** > **Explorer for Endevor** > **Profiles: Keep in sync**.
 
@@ -931,18 +926,10 @@ For more information, see [COBOL Language Support](https://marketplace.visualstu
 
 </details>
 
-<details>
-<summary id="compat"><span style="font-size: 1.2em">Zowe Conformance Program</span></summary>
-
-<a href="https://www.openmainframeproject.org/all-projects/zowe/conformance"><img src="images/zowe-v3-conformant-badge.png" alt="Zowe Explorer V3 Conformance Badge" width="200" height="160"/></a>
-
-Explorer for Endevor is Zowe Explorer V3 Conformant. The Zowe Conformance Program ensures a high level of common functionality, interoperability, and user experience while using an extension that leverages Zowe. For more information, see [Zowe Conformance Program](https://www.openmainframeproject.org/all-projects/zowe/conformance).
-
-</details>
 </details>
 
 <details>
-<summary id="compat"><span style="font-size: 1.5em"><b>Review Extension Limitations</b></span><hr></summary>
+<summary id="limitations"><span style="font-size: 1.5em"><b>Review Extension Limitations</b></span><hr></summary>
 
 This section lists notable limitations in the current version of Explorer for Endevor.
 
@@ -954,7 +941,16 @@ This section lists notable limitations in the current version of Explorer for En
 </details>
 
 <details>
-<summary id="compat"><span style="font-size: 1.5em"><b>Privacy Notice</b></span><hr></summary>
+<summary id="conformanceZowe"><span style="font-size: 1.5em"><b>Zowe Conformance Program</b></span><hr></summary>
+
+<a href="https://www.openmainframeproject.org/all-projects/zowe/conformance"><img src="images/zowe-v3-conformant-badge.png" alt="Zowe Explorer V3 Conformance Badge" width="200" height="160"/></a>
+
+Explorer for Endevor is Zowe Explorer V3 Conformant. The Zowe Conformance Program ensures a high level of common functionality, interoperability, and user experience while using an extension that leverages Zowe. For more information, see [Zowe Conformance Program](https://www.openmainframeproject.org/all-projects/zowe/conformance).
+
+</details>
+
+<details>
+<summary id="privacyNotice"><span style="font-size: 1.5em"><b>Privacy Notice</b></span><hr></summary>
 
 The extensions for Visual Studio Code developed by Broadcom Inc., including its corporate affiliates and subsidiaries, ("Broadcom") are provided free of charge, but in order to better understand and meet its users’ needs, Broadcom may collect, use, analyze and retain anonymous users’ metadata and interaction data, (collectively, “Usage Data”) and aggregate such Usage Data with similar Usage Data of other Broadcom customers. Please find more detailed information in [License and Service Terms & Repository](https://www.broadcom.com/company/legal/licensing).
 
@@ -983,7 +979,7 @@ Each event is logged with the following records:
 </details>
 
 <details>
-<summary id="compat"><span style="font-size: 1.5em"><b>Technical Assistance and Support</b></span><hr></summary>
+<summary id="techAssist"><span style="font-size: 1.5em"><b>Technical Assistance and Support</b></span><hr></summary>
 
 The Explorer for Endevor extension is made available to customers on the Visual Studio Code Marketplace in accordance with the terms and conditions contained in the provided End-User License Agreement (EULA).
 

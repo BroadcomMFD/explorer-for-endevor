@@ -22,7 +22,7 @@ EXPRESSLY ADVISED OF SUCH LOSS OR DAMAGE.
 ---
 
 Broadcom Internal
-(@broadcom/endevor-for-zowe-cli 7.9.0)
+(@broadcom/endevor-for-zowe-cli 7.9.1)
 
 Copyright (c) 2019 Broadcom.  All Rights Reserved.  The term
 "Broadcom" refers to Broadcom Inc. and/or its subsidiaries.
@@ -485,7 +485,7 @@ SOFTWARE.
 ---
 
 EPL-2.0
-(@zowe/imperative 5.27.8)
+(@zowe/imperative 5.27.10)
 
 Eclipse Public License - v 2.0
 
@@ -768,7 +768,7 @@ You may add additional accurate notices of copyright ownership.
 ---
 
 MIT
-(agent-base 7.1.3)
+(agent-base 7.1.4)
 
 (The MIT License)
 
@@ -1923,7 +1923,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ---
 
 ISC
-(flatted 3.3.1)
+(flatted 3.3.3)
 
 ISC License
 
@@ -1969,7 +1969,7 @@ THE SOFTWARE.
 ---
 
 MIT
-(fp-ts 2.16.10)
+(fp-ts 2.16.11)
 
 MIT License
 
@@ -1996,7 +1996,7 @@ SOFTWARE.
 ---
 
 MIT
-(fs-extra 8.1.0)
+(fs-extra 9.1.0)
 
 (The MIT License)
 
@@ -2591,7 +2591,7 @@ SOFTWARE.
 ---
 
 MIT
-(js-yaml 4.1.0)
+(js-yaml 4.1.1)
 
 (The MIT License)
 
@@ -3752,7 +3752,7 @@ SOFTWARE.
 ---
 
 MIT
-(rfdc 1.3.0)
+(rfdc 1.4.1)
 
 Copyright 2019 "David Mark Clements <david.mark.clements@gmail.com>"
 
@@ -4038,11 +4038,11 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ---
 
 MIT
-(supports-color 8.1.1)
+(supports-color 7.2.0)
 
 MIT License
 
-Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
+Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -4121,7 +4121,7 @@ THE SOFTWARE.
 ---
 
 MIT
-(ts-loader 9.5.2)
+(ts-loader 9.5.4)
 
 The MIT License (MIT)
 
@@ -4174,7 +4174,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ---
 
 MIT
-(underscore 1.13.6)
+(underscore 1.13.7)
 
 Copyright (c) 2009-2022 Jeremy Ashkenas, Julian Gonggrijp, and DocumentCloud and
 Investigative Reporters & Editors
@@ -4230,7 +4230,7 @@ SOFTWARE.
 ---
 
 MIT
-(universalify 0.1.2)
+(universalify 2.0.1)
 
 (The MIT License)
 

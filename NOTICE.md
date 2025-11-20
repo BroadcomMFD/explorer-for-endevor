@@ -2,7 +2,7 @@
 
 This project leverages the following third party content.
 
-@broadcom/endevor-for-zowe-cli (7.9.0)
+@broadcom/endevor-for-zowe-cli (7.9.1)
 
 - License: Broadcom Internal
 - Project: https://www.npmjs.com/package/@broadcom/endevor-for-zowe-cli
@@ -87,12 +87,12 @@ This project leverages the following third party content.
 - License: MIT
 - Project: https://www.npmjs.com/package/@vscode/extension-telemetry
 
-@zowe/imperative (5.27.8)
+@zowe/imperative (5.27.10)
 
 - License: EPL-2.0
 - Project: https://www.npmjs.com/package/@zowe/imperative
 
-agent-base (7.1.3)
+agent-base (7.1.4)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/agent-base
@@ -307,7 +307,7 @@ find-up (4.1.0)
 - License: MIT
 - Project: https://www.npmjs.com/package/find-up
 
-flatted (3.3.1)
+flatted (3.3.3)
 
 - License: ISC
 - Project: https://www.npmjs.com/package/flatted
@@ -317,12 +317,12 @@ form-data (2.5.5)
 - License: MIT
 - Project: https://www.npmjs.com/package/form-data
 
-fp-ts (2.16.10)
+fp-ts (2.16.11)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/fp-ts
 
-fs-extra (8.1.0)
+fs-extra (9.1.0)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/fs-extra
@@ -437,7 +437,7 @@ jest-get-type (27.5.1)
 - License: MIT
 - Project: https://www.npmjs.com/package/jest-get-type
 
-js-yaml (4.1.0)
+js-yaml (4.1.1)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/js-yaml
@@ -637,7 +637,7 @@ reusify (1.0.4)
 - License: MIT
 - Project: https://www.npmjs.com/package/reusify
 
-rfdc (1.3.0)
+rfdc (1.4.1)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/rfdc
@@ -692,7 +692,7 @@ strip-ansi (6.0.1)
 - License: MIT
 - Project: https://www.npmjs.com/package/strip-ansi
 
-supports-color (8.1.1)
+supports-color (7.2.0)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/supports-color
@@ -707,7 +707,7 @@ to-regex-range (5.0.1)
 - License: MIT
 - Project: https://www.npmjs.com/package/to-regex-range
 
-ts-loader (9.5.2)
+ts-loader (9.5.4)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/ts-loader
@@ -717,7 +717,7 @@ uc.micro (2.1.0)
 - License: MIT
 - Project: https://www.npmjs.com/package/uc.micro
 
-underscore (1.13.6)
+underscore (1.13.7)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/underscore
@@ -727,7 +727,7 @@ undici (5.29.0)
 - License: MIT
 - Project: https://www.npmjs.com/package/undici
 
-universalify (0.1.2)
+universalify (2.0.1)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/universalify
