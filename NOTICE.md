@@ -97,7 +97,7 @@ agent-base (7.1.4)
 - License: MIT
 - Project: https://www.npmjs.com/package/agent-base
 
-ajv (8.17.1)
+ajv (8.18.0)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/ajv
@@ -217,7 +217,7 @@ delayed-stream (1.0.0)
 - License: MIT
 - Project: https://www.npmjs.com/package/delayed-stream
 
-diff (5.1.0)
+diff (5.2.2)
 
 - License: BSD-3-Clause
 - Project: https://www.npmjs.com/package/diff
@@ -462,7 +462,7 @@ locate-path (5.0.0)
 - License: MIT
 - Project: https://www.npmjs.com/package/locate-path
 
-lodash (4.17.21)
+lodash (4.17.23)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/lodash
@@ -487,7 +487,7 @@ lru-cache (6.0.0)
 - License: ISC
 - Project: https://www.npmjs.com/package/lru-cache
 
-markdown-it (14.1.0)
+markdown-it (14.1.1)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/markdown-it
@@ -717,7 +717,7 @@ uc.micro (2.1.0)
 - License: MIT
 - Project: https://www.npmjs.com/package/uc.micro
 
-underscore (1.13.7)
+underscore (1.13.8)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/underscore

@@ -2,6 +2,12 @@
 
 You can find all notable changes to Explorer for Endevor in this document.
 
+## [1.11.4] &ndash; 2026-03-12
+
+### Fixed
+
+- Fixed various issues with fetching dependencies for COBOL Language Support including performance problems.
+
 ## [1.11.3] &ndash; 2025-11-19
 
 ### Fixed
