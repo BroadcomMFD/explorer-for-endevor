@@ -2,7 +2,7 @@
 
 This project leverages the following third party content.
 
-@broadcom/endevor-for-zowe-cli (7.9.1)
+@broadcom/endevor-for-zowe-cli (7.10.3)
 
 - License: Broadcom Internal
 - Project: https://www.npmjs.com/package/@broadcom/endevor-for-zowe-cli
@@ -11,11 +11,6 @@ This project leverages the following third party content.
 
 - License: MIT
 - Project: https://www.npmjs.com/package/@colors/colors
-
-@fastify/busboy (2.0.0)
-
-- License: MIT
-- Project: https://www.npmjs.com/package/@fastify/busboy
 
 @microsoft/1ds-core-js (4.3.4)
 
@@ -57,12 +52,12 @@ This project leverages the following third party content.
 - License: MIT
 - Project: https://www.npmjs.com/package/@microsoft/dynamicproto-js
 
-@nevware21/ts-async (0.5.2)
+@nevware21/ts-async (0.6.1)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/@nevware21/ts-async
 
-@nevware21/ts-utils (0.11.3)
+@nevware21/ts-utils (0.16.0)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/@nevware21/ts-utils
@@ -307,12 +302,12 @@ find-up (4.1.0)
 - License: MIT
 - Project: https://www.npmjs.com/package/find-up
 
-flatted (3.3.3)
+flatted (3.4.2)
 
 - License: ISC
 - Project: https://www.npmjs.com/package/flatted
 
-form-data (2.5.5)
+form-data (2.5.6)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/form-data
@@ -382,7 +377,7 @@ has-tostringtag (1.0.2)
 - License: MIT
 - Project: https://www.npmjs.com/package/has-tostringtag
 
-hasown (2.0.2)
+hasown (2.0.4)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/hasown
@@ -437,7 +432,7 @@ jest-get-type (27.5.1)
 - License: MIT
 - Project: https://www.npmjs.com/package/jest-get-type
 
-js-yaml (4.1.1)
+js-yaml (4.3.0)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/js-yaml
@@ -452,7 +447,7 @@ jsonschema (1.4.1)
 - License: MIT
 - Project: https://www.npmjs.com/package/jsonschema
 
-linkify-it (5.0.0)
+linkify-it (5.0.2)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/linkify-it
@@ -462,7 +457,7 @@ locate-path (5.0.0)
 - License: MIT
 - Project: https://www.npmjs.com/package/locate-path
 
-lodash (4.17.23)
+lodash (4.18.1)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/lodash
@@ -487,7 +482,7 @@ lru-cache (6.0.0)
 - License: ISC
 - Project: https://www.npmjs.com/package/lru-cache
 
-markdown-it (14.1.1)
+markdown-it (14.3.0)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/markdown-it
@@ -522,7 +517,7 @@ mime-types (2.1.35)
 - License: MIT
 - Project: https://www.npmjs.com/package/mime-types
 
-ms (2.1.2)
+ms (2.1.3)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/ms
@@ -572,7 +567,7 @@ path-key (3.1.1)
 - License: MIT
 - Project: https://www.npmjs.com/package/path-key
 
-picomatch (2.3.1)
+picomatch (2.3.2)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/picomatch
@@ -722,7 +717,7 @@ underscore (1.13.8)
 - License: MIT
 - Project: https://www.npmjs.com/package/underscore
 
-undici (5.29.0)
+undici (6.28.0)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/undici

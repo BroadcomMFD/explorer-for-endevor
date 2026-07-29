@@ -2,6 +2,19 @@
 
 You can find all notable changes to Explorer for Endevor in this document.
 
+## [1.11.5] &ndash; 2026-07-28
+
+### Added
+
+- Added a **Compare With...** action icon to the **Element History** View items for better discoverability.
+
+### Fixed
+
+- Fixed an issue that caused the baseline Change Levels in the **Element History** View to show incorrect changes.
+- Fixed an issue that prevented users from fetching dependencies for COBOL Language Support when specific Processor notation is used.
+- Fixed an issue that caused Workspace Sync operations to fail with VS Code version 1.123 or higher.
+- Various stability fixes and security improvements.
+
 ## [1.11.4] &ndash; 2026-03-12
 
 ### Fixed

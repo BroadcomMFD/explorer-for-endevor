@@ -2,8 +2,8 @@
 
 <div id="header" align="center">
 
-[![Version](https://img.shields.io/badge/version-1.11.4-brightgreen)](https://marketplace.visualstudio.com/items/broadcomMFD.explorer-for-endevor/changelog)
-[![Installs](https://img.shields.io/badge/installs-22k+-blue)](https://marketplace.visualstudio.com/items/broadcomMFD.explorer-for-endevor)
+[![Version](https://img.shields.io/badge/version-1.11.5-brightgreen)](https://marketplace.visualstudio.com/items/broadcomMFD.explorer-for-endevor/changelog)
+[![Installs](https://img.shields.io/badge/installs-24k+-blue)](https://marketplace.visualstudio.com/items/broadcomMFD.explorer-for-endevor)
 [![GitHub issues](https://img.shields.io/github/issues/BroadcomMFD/explorer-for-endevor)](https://github.com/BroadcomMFD/explorer-for-endevor/issues)
 [![Slack](https://img.shields.io/badge/chat-on%20Slack-purple)](https://che4z.slack.com/join/shared_invite/zt-37ewynplx-wCoabaIDxN6Ofm4_XBinZA#/shared-invite/email)
 [![Support](https://img.shields.io/badge/Broadcom-support-red)](https://www.broadcom.com/support)
@@ -37,7 +37,7 @@ We encourage you to share ideas to help improve Explorer for Endevor. You can al
 <details>
 <summary id="announce"><span style="font-size: 1.5em"><b>Announcements and News</b></span><hr></summary>
 
-- REST API v1 `EndevorService/api/v1` and `EndevorService/rest` will no longer be supported in **Explorer for Endevor 2.0.0** (release plan - End of March 2026). Ensure that you use REST API v2 `EndevorService/api/v2` in `basePath` in your Endevor connections to avoid business disruptions.
+- REST API v1 `EndevorService/api/v1` and `EndevorService/rest` will no longer be supported in **Explorer for Endevor 2.0.0** (release plan - End of October 2026). Ensure that you use REST API v2 `EndevorService/api/v2` in `basePath` in your Endevor connections to avoid business disruptions.
 
 - **Mainframe Technical Exchange**
 
