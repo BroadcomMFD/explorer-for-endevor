@@ -2,6 +2,12 @@
 
 You can find all notable changes to Explorer for Endevor in this document.
 
+## [1.11.6] &ndash; 2026-10-13
+
+### Changed
+
+- Added support for special characters for CCID validation.
+
 ## [1.11.5] &ndash; 2026-07-28
 
 ### Added

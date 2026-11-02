@@ -2,7 +2,7 @@
 
 <div id="header" align="center">
 
-[![Version](https://img.shields.io/badge/version-1.11.5-brightgreen)](https://marketplace.visualstudio.com/items/broadcomMFD.explorer-for-endevor/changelog)
+[![Version](https://img.shields.io/badge/version-1.11.6-brightgreen)](https://marketplace.visualstudio.com/items/broadcomMFD.explorer-for-endevor/changelog)
 [![Installs](https://img.shields.io/badge/installs-24k+-blue)](https://marketplace.visualstudio.com/items/broadcomMFD.explorer-for-endevor)
 [![GitHub issues](https://img.shields.io/github/issues/BroadcomMFD/explorer-for-endevor)](https://github.com/BroadcomMFD/explorer-for-endevor/issues)
 [![Slack](https://img.shields.io/badge/chat-on%20Slack-purple)](https://che4z.slack.com/join/shared_invite/zt-37ewynplx-wCoabaIDxN6Ofm4_XBinZA#/shared-invite/email)

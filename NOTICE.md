@@ -432,7 +432,7 @@ jest-get-type (27.5.1)
 - License: MIT
 - Project: https://www.npmjs.com/package/jest-get-type
 
-js-yaml (4.3.0)
+js-yaml (4.3.2)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/js-yaml
@@ -702,11 +702,6 @@ to-regex-range (5.0.1)
 - License: MIT
 - Project: https://www.npmjs.com/package/to-regex-range
 
-ts-loader (9.5.4)
-
-- License: MIT
-- Project: https://www.npmjs.com/package/ts-loader
-
 uc.micro (2.1.0)
 
 - License: MIT
@@ -717,7 +712,7 @@ underscore (1.13.8)
 - License: MIT
 - Project: https://www.npmjs.com/package/underscore
 
-undici (6.28.0)
+undici (6.29.0)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/undici
