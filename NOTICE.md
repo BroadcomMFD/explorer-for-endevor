@@ -482,7 +482,7 @@ lru-cache (6.0.0)
 - License: ISC
 - Project: https://www.npmjs.com/package/lru-cache
 
-markdown-it (14.3.0)
+markdown-it (14.3.3)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/markdown-it
@@ -712,7 +712,7 @@ underscore (1.13.8)
 - License: MIT
 - Project: https://www.npmjs.com/package/underscore
 
-undici (6.29.0)
+undici (6.29.1)
 
 - License: MIT
 - Project: https://www.npmjs.com/package/undici

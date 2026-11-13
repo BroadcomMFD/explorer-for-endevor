@@ -2,6 +2,12 @@
 
 You can find all notable changes to Explorer for Endevor in this document.
 
+## [1.11.7] &ndash; 2026-11-13
+
+### Fixed
+
+- Stability and security improvements.
+
 ## [1.11.6] &ndash; 2026-10-13
 
 ### Changed
